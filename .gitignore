@@ -42,3 +42,7 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# eigene Notizen, nicht ins Repo
+CLAUDE.md
+PROGRESS.md

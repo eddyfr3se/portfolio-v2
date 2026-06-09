@@ -1,0 +1,15 @@
+// blaue Deko-Kreise (Version 2). Größe per Mixin, Position macht die Section.
+@mixin circle($size, $color: var(--color-blue)) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: $color;
+}
+
+// Basis-Klasse für Kreise, die hinter/neben dem Inhalt liegen
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-blue);
+  z-index: 0;
+}
