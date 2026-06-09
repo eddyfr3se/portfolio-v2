@@ -1,0 +1,15 @@
+// globale Grundtypografie
+body {
+  font-family: var(--font-main);
+  font-size: var(--fs-body);
+  line-height: 1.2;
+  color: var(--color-black);
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.05;
+}
