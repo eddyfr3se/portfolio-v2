@@ -1,9 +1,31 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(48px, 5vw, 90px);
+  position: relative;
   padding: clamp(64px, 8vw, 140px) 5vw;
   background: var(--color-white);
+}
+
+// blaue Kugeln am oberen Rand, ragen in den Hero hoch
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #5988ff 35%, #2d65f8 70%, #0043f0 100%);
+  z-index: 2;
+}
+
+.ball--big {
+  top: -110px;
+  left: 49%;
+  width: 220px;
+  height: 220px;
+  transform: translateX(-50%);
+}
+
+.ball--small {
+  top: -45px;
+  left: 72%;
+  width: 90px;
+  height: 90px;
+  transform: translateX(-50%);
 }
 
 .about__top {
@@ -12,8 +34,14 @@
   gap: 5vw;
 }
 
+.about__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .about__title {
-  flex: 0 0 auto;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(56px, 8.4vw, 121px);
@@ -25,40 +53,11 @@
   display: block;
 }
 
-.about__intro {
-  flex: 1;
-  align-self: center;
-  max-width: 520px;
-}
-
-.about__intro p {
-  margin-bottom: 28px;
-  font-size: clamp(16px, 1.3vw, 20px);
-  line-height: 1.6;
-  color: var(--color-black);
-}
-
-.btn {
-  display: inline-block;
-  padding: 16px 40px;
-  border-radius: 12px;
-  background: var(--color-blue);
-  color: var(--color-white);
-  font-size: var(--fs-tag);
-  font-weight: 600;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  background: #4476f0;
-  transform: translateY(-2px);
-}
-
 .about__availability {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
 }
 
 .about__iam {
@@ -89,20 +88,62 @@
   height: 38px;
 }
 
+.about__intro {
+  flex: 0 1 460px;
+  align-self: center;
+}
+
+.about__intro p {
+  margin-bottom: 28px;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 2px solid var(--color-blue);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-blue);
+  font-size: var(--fs-tag);
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
 @media (max-width: 768px) {
+  .ball {
+    display: none;
+  }
+
   .about__top {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 32px;
+    gap: 40px;
   }
 
-  .about__intro {
-    align-self: stretch;
+  .about__main {
+    align-items: center;
   }
 
   .avail {
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
+    width: auto;
+  }
+
+  .avail li {
+    justify-content: center;
+  }
+
+  .about__intro {
+    flex: none;
   }
 }
