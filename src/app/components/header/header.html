@@ -1,0 +1,17 @@
+<header class="header">
+  <a href="#" class="logo">Portfolio</a>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Sprachschalter ist erstmal nur Optik (Logik an Tag 12) -->
+  <div class="lang">
+    <button [class.active]="lang === 'EN'" (click)="setLang('EN')">EN</button>
+    <span>|</span>
+    <button [class.active]="lang === 'DE'" (click)="setLang('DE')">DE</button>
+  </div>
+</header>

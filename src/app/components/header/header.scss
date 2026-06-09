@@ -1,0 +1,45 @@
+.header {
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // Paddings noch geschätzt, kommen exakt aus Figma
+  padding: 0 80px;
+  background: var(--color-white);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  font-size: var(--fs-tag);
+  color: var(--color-black);
+}
+
+.nav a:hover {
+  color: var(--color-blue);
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang button {
+  font-size: var(--fs-tag);
+  color: var(--color-black);
+}
+
+.lang button.active {
+  color: var(--color-blue);
+  font-weight: 700;
+}
