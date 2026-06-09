@@ -1,5 +1,5 @@
 <header class="header">
-  <a href="#" class="logo" (click)="closeMenu()">Portfolio</a>
+  <a href="#home" class="logo" (click)="closeMenu()" aria-label="Startseite"></a>
 
   <button
     class="burger"
@@ -14,17 +14,16 @@
 
   <div class="menu" [class.open]="menuOpen">
     <nav class="nav">
-      <a href="#about" (click)="closeMenu()">About</a>
-      <a href="#skills" (click)="closeMenu()">Skills</a>
-      <a href="#projects" (click)="closeMenu()">Projects</a>
-      <a href="#contact" (click)="closeMenu()">Contact</a>
+      <a href="#about" (click)="closeMenu()">About me</a>
+      <a href="#skills" (click)="closeMenu()">Skill set</a>
+      <a href="#work" (click)="closeMenu()">My work</a>
     </nav>
 
     <!-- Sprachschalter ist erstmal nur Optik (Logik an Tag 12) -->
     <div class="lang">
-      <button [class.active]="lang === 'EN'" (click)="setLang('EN')">EN</button>
-      <span>|</span>
       <button [class.active]="lang === 'DE'" (click)="setLang('DE')">DE</button>
+      <span class="sep">/</span>
+      <button [class.active]="lang === 'EN'" (click)="setLang('EN')">EN</button>
     </div>
   </div>
 </header>

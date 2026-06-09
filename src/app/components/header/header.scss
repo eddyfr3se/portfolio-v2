@@ -1,57 +1,71 @@
 .header {
-  position: relative;
-  height: 117px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // Paddings noch geschätzt, kommen exakt aus Figma
-  padding: 0 80px;
-  background: var(--color-white);
+  height: 117px;
+  padding: 0 77px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color-blue);
+  width: 64px;
+  height: 69px;
+  // weiß auf dem blauen Kreis (Desktop), blau auf hellem Grund (Mobile)
+  background: url('/assets/icons/logo-header.svg') center / contain no-repeat;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
 }
 
 .nav {
   display: flex;
-  gap: 40px;
+  gap: 36px;
 }
 
 .nav a {
-  font-size: var(--fs-tag);
-  color: var(--color-black);
+  padding-bottom: 2px;
+  font-size: var(--fs-subtitle);
+  color: var(--color-blue);
 }
 
 .nav a:hover {
-  color: var(--color-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
 }
 
 .lang {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: var(--fs-subtitle);
 }
 
 .lang button {
-  font-size: var(--fs-tag);
-  color: var(--color-black);
+  font-size: var(--fs-subtitle);
+  color: var(--color-blue);
+}
+
+.lang .sep {
+  color: var(--color-blue);
 }
 
 .lang button.active {
-  color: var(--color-blue);
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
 }
 
-// Burger nur auf Mobile sichtbar
+// Burger nur auf Mobile
 .burger {
   display: none;
   flex-direction: column;
@@ -66,11 +80,10 @@
   width: 100%;
   height: 3px;
   border-radius: 2px;
-  background: var(--color-black);
+  background: var(--color-blue);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-// offener Burger wird zum X
 .burger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -83,16 +96,19 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     padding: 0 24px;
+  }
+
+  .logo {
+    background-image: url('/assets/icons/logo-header-blue.svg');
   }
 
   .burger {
     display: flex;
   }
 
-  // Nav + Schalter werden zum Overlay, das von rechts reinkommt
   .menu {
     position: fixed;
     inset: 0;
@@ -115,6 +131,6 @@
   }
 
   .nav a {
-    font-size: 24px;
+    font-size: 28px;
   }
 }

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Header {
   // nur Platzhalter, die echte Übersetzung kommt an Tag 12
-  lang = 'DE';
+  lang = 'EN';
 
   // Burger-Menü auf/zu
   menuOpen = false;
