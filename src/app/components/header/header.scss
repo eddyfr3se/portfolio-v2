@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 117px;
   display: flex;
   align-items: center;
@@ -12,6 +13,12 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--color-blue);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav {
@@ -42,4 +49,72 @@
 .lang button.active {
   color: var(--color-blue);
   font-weight: 700;
+}
+
+// Burger nur auf Mobile sichtbar
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 18px;
+  z-index: 20;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-black);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+// offener Burger wird zum X
+.burger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 24px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  // Nav + Schalter werden zum Overlay, das von rechts reinkommt
+  .menu {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    background: var(--color-white);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav a {
+    font-size: 24px;
+  }
 }

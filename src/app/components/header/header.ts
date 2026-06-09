@@ -10,7 +10,18 @@ export class Header {
   // nur Platzhalter, die echte Übersetzung kommt an Tag 12
   lang = 'DE';
 
+  // Burger-Menü auf/zu
+  menuOpen = false;
+
   setLang(value: string) {
     this.lang = value;
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
   }
 }

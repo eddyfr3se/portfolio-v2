@@ -1,17 +1,30 @@
 <header class="header">
-  <a href="#" class="logo">Portfolio</a>
+  <a href="#" class="logo" (click)="closeMenu()">Portfolio</a>
 
-  <nav class="nav">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <button
+    class="burger"
+    [class.open]="menuOpen"
+    (click)="toggleMenu()"
+    aria-label="Menü öffnen"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <!-- Sprachschalter ist erstmal nur Optik (Logik an Tag 12) -->
-  <div class="lang">
-    <button [class.active]="lang === 'EN'" (click)="setLang('EN')">EN</button>
-    <span>|</span>
-    <button [class.active]="lang === 'DE'" (click)="setLang('DE')">DE</button>
+  <div class="menu" [class.open]="menuOpen">
+    <nav class="nav">
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#skills" (click)="closeMenu()">Skills</a>
+      <a href="#projects" (click)="closeMenu()">Projects</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+    </nav>
+
+    <!-- Sprachschalter ist erstmal nur Optik (Logik an Tag 12) -->
+    <div class="lang">
+      <button [class.active]="lang === 'EN'" (click)="setLang('EN')">EN</button>
+      <span>|</span>
+      <button [class.active]="lang === 'DE'" (click)="setLang('DE')">DE</button>
+    </div>
   </div>
 </header>
