@@ -4,11 +4,10 @@
   background: var(--color-white);
 }
 
-// blaue Kugeln am oberen Rand, ragen in den Hero hoch
+// blaue Kugeln am oberen Rand, ragen in den Hero hoch (SVG aus Figma)
 .ball {
   position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #5988ff 35%, #2d65f8 70%, #0043f0 100%);
+  background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 2;
 }
 
