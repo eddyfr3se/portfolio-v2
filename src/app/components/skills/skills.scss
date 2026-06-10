@@ -1,0 +1,44 @@
+.skills {
+  padding: clamp(64px, 7vw, 110px) 5vw;
+  background: var(--color-blue);
+  text-align: center;
+
+  &__title {
+    margin-bottom: clamp(40px, 5vw, 80px);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(48px, 6vw, 90px);
+    color: var(--color-white);
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: clamp(40px, 6vw, 110px);
+    row-gap: 56px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: var(--color-white);
+    font-size: var(--fs-body);
+
+    img {
+      height: 75px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    // im Figma gibt es eine Bold-Variante als Hover
+    &:hover span {
+      font-weight: 700;
+    }
+  }
+}
