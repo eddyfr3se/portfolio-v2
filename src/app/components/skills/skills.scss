@@ -41,4 +41,15 @@
       font-weight: 700;
     }
   }
+
+  @media (max-width: 768px) {
+    &__grid {
+      column-gap: 32px;
+      row-gap: 36px;
+    }
+
+    &__item img {
+      height: 56px;
+    }
+  }
 }
