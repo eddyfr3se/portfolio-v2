@@ -1,0 +1,21 @@
+.projects {
+  padding: clamp(64px, 8vw, 130px) 5vw;
+  background: var(--color-white);
+
+  &__title {
+    margin-bottom: clamp(48px, 6vw, 100px);
+    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(48px, 6vw, 90px);
+    color: var(--color-blue);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(72px, 8vw, 130px);
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+}

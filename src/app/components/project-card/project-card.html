@@ -1,0 +1,15 @@
+<article class="card" [class.card--reverse]="reverse()">
+  <img
+    class="card__img"
+    [src]="project().image"
+    [alt]="project().name"
+    loading="lazy"
+  />
+
+  <div class="card__text">
+    <h3 class="card__name">{{ project().name }}</h3>
+    <p class="card__stack">{{ project().stack }}</p>
+    <p class="card__desc">{{ project().description }}</p>
+    <a class="card__btn" [href]="project().githubUrl" target="_blank" rel="noopener">Github</a>
+  </div>
+</article>

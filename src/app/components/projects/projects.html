@@ -1,0 +1,9 @@
+<section class="projects" id="work">
+  <h2 class="projects__title">My work</h2>
+
+  <div class="projects__list">
+    @for (project of projects; track project.name) {
+      <app-project-card [project]="project" [reverse]="$index % 2 === 1" />
+    }
+  </div>
+</section>
