@@ -55,10 +55,18 @@
     box-shadow: var(--shadow-card);
     color: var(--color-blue);
     font-size: var(--fs-subtitle);
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
+    // Hover/Click sind so in der Figma-Komponente "Button primary s2" definiert
     &:hover {
-      background: var(--color-blue);
+      border-color: transparent;
+      background: radial-gradient(circle at 25% 25%, var(--color-blue) 45%, var(--color-blue-dark) 100%);
+      color: var(--color-white);
+    }
+
+    &:active {
+      border-color: transparent;
+      background: var(--color-blue-dark);
       color: var(--color-white);
     }
   }
