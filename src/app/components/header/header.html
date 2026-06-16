@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" [class.menu-open]="menuOpen">
   <a href="#home" class="logo" (click)="closeMenu()" aria-label="Startseite"></a>
 
   <button
@@ -17,6 +17,7 @@
       <a href="#about" (click)="closeMenu()">About me</a>
       <a href="#skills" (click)="closeMenu()">Skill set</a>
       <a href="#work" (click)="closeMenu()">My work</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
     </nav>
 
     <!-- Sprachschalter ist erstmal nur Optik (Logik an Tag 12) -->
