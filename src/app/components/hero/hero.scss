@@ -85,6 +85,11 @@
   color: var(--color-blue);
 }
 
+// die Mobile-Variante ("Scroll down →") ist auf Desktop aus
+.hero__scroll-phrase {
+  display: none;
+}
+
 .hero__scroll .line {
   width: 1px;
   height: 330px;
@@ -124,44 +129,88 @@
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    align-items: stretch;
+    gap: 0;
     min-height: auto;
-    padding: 120px 20px 48px;
-    text-align: center;
+    padding: 0;
   }
 
+  // großer blauer Kreis, nach rechts versetzt: rechte Kante endet am Bildschirmrand,
+  // unten links bleibt weiß (wie im Figma) – nicht mittig/symmetrisch
   .hero__circle {
-    top: auto;
-    bottom: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 380px;
+    top: -48vw;
+    left: -24vw;
+    right: auto;
+    transform: none;
+    width: 187vw;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
   }
 
+  // Text liegt auf der blauen Fläche -> weiß, linksbündig
   .hero__text {
     order: 1;
+    z-index: 2;
     flex: none;
-    padding-top: 0;
+    padding: 130px 24px 0;
   }
 
+  .greeting {
+    color: var(--color-white);
+    font-size: clamp(24px, 7vw, 36px);
+  }
+
+  .job-title {
+    color: var(--color-white);
+  }
+
+  .job-title .line1 {
+    font-size: clamp(52px, 15vw, 82px);
+  }
+
+  .job-title .line2 {
+    font-size: clamp(48px, 13.5vw, 74px);
+  }
+
+  // Person steht vor der Fläche und ragt unten ins Weiße
   .hero__photo {
     order: 2;
-    width: min(320px, 80vw);
-    height: auto;
-    object-fit: contain;
+    z-index: 1;
+    align-self: center;
+    width: min(440px, 92vw);
+    height: 460px;
+    object-fit: cover;
+    object-position: center top;
+    margin-top: -8px;
   }
 
+  // Scroll-Hinweis rechts, vertikal, im weißen Bereich (rechts neben der Person)
   .hero__scroll {
+    right: 14px;
+    top: auto;
+    bottom: 24px;
+    z-index: 2;
+  }
+
+  // auf Mobile "SCROLL"-Wort + Linie aus, dafür "Scroll down →" vertikal
+  .hero__scroll-word,
+  .hero__scroll .line {
     display: none;
   }
 
+  .hero__scroll-phrase {
+    display: block;
+    writing-mode: vertical-rl;
+    color: var(--color-blue);
+    font-size: var(--fs-tag);
+    letter-spacing: 1px;
+  }
+
+  // Social-Leiste auf Mobile aus (kommt im Footer)
   .hero__social {
-    order: 3;
-    position: static;
-    flex-direction: row;
-    gap: 24px;
-    margin-top: 8px;
+    display: none;
   }
 }
 
