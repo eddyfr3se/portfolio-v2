@@ -15,8 +15,8 @@
   left: -185px;
   width: clamp(520px, 62vw, 892px);
   aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--color-blue);
+  // gleicher Verlauf wie die kleinen Kugeln (Figma-SVG)
+  background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 0;
 }
 
