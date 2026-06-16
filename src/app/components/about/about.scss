@@ -126,8 +126,29 @@
 }
 
 @media (max-width: 768px) {
-  .ball {
-    display: none;
+  // Platz oben für die Kugeln; overflow hidden schneidet den Teil der großen
+  // Kugel ab, der über die Foto-Unterkante nach oben ragt (Halbkugel-Look)
+  .about {
+    overflow: hidden;
+    padding-top: 150px;
+  }
+
+  // große Kugel sitzt auf der Naht: 50% oben (Hero), 50% unten (Weiß)
+  .ball--big {
+    top: 0;
+    left: 16%;
+    width: 152px;
+    height: 152px;
+    transform: translateY(-50%);
+  }
+
+  // kleine Kugel rechts, knapp unter der Naht im Weißen
+  .ball--small {
+    top: 0;
+    left: 72%;
+    width: 64px;
+    height: 64px;
+    transform: translateY(18%);
   }
 
   .about__top {
