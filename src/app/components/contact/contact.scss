@@ -1,8 +1,40 @@
 .contact {
+  position: relative;
+  overflow: hidden;
   padding: clamp(64px, 8vw, 130px) 5vw;
   background: var(--color-white);
 
+  // blaue Deko-Kugeln, am Rand angeschnitten, hinter dem Inhalt
+  &__ball {
+    position: absolute;
+    z-index: 0;
+    background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
+  }
+
+  &__ball--right {
+    top: 6%;
+    right: -260px;
+    width: 560px;
+    height: 560px;
+  }
+
+  &__ball--left {
+    bottom: -180px;
+    left: -160px;
+    width: 393px;
+    height: 393px;
+  }
+
+  &__ball--dot {
+    top: 52%;
+    left: 14%;
+    width: 51px;
+    height: 51px;
+  }
+
   &__title {
+    position: relative;
+    z-index: 1;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: clamp(56px, 7vw, 90px);
@@ -10,6 +42,8 @@
   }
 
   &__body {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: clamp(40px, 6vw, 110px);
     align-items: flex-start;
@@ -147,6 +181,10 @@
   }
 
   @media (max-width: 900px) {
+    &__ball {
+      display: none;
+    }
+
     &__body {
       flex-direction: column;
     }
