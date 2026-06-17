@@ -14,21 +14,41 @@
       </p>
     </div>
 
-    <!-- noch ein einfaches Formular, die Logik (Reactive Forms) kommt Tag 10 -->
-    <form class="contact__form">
-      <input class="contact__field" type="text" placeholder="Your name" />
-      <input class="contact__field" type="email" placeholder="Your email" />
-      <textarea class="contact__field contact__message" placeholder="Your message"></textarea>
+    <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="contact__group">
+        <input class="contact__field" type="text" placeholder="Your name" formControlName="name" />
+        @if (name.touched && name.invalid) {
+          <p class="contact__error">Please enter your name.</p>
+        }
+      </div>
+
+      <div class="contact__group">
+        <input class="contact__field" type="email" placeholder="Your email" formControlName="email" />
+        @if (email.touched && email.invalid) {
+          <p class="contact__error">Please enter a valid email.</p>
+        }
+      </div>
+
+      <div class="contact__group">
+        <textarea class="contact__field contact__message" placeholder="Your message" formControlName="message"></textarea>
+        @if (message.touched && message.invalid) {
+          <p class="contact__error">Please enter a message.</p>
+        }
+      </div>
 
       <label class="contact__privacy">
-        <input type="checkbox" />
+        <input type="checkbox" formControlName="privacy" />
         <span>
-          I've read the <a href="#">privacy policy</a> and agree to the processing of my
+          I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my
           data as outlined.
         </span>
       </label>
 
-      <button class="contact__send" type="submit">Say hello ;)</button>
+      <button class="contact__send" type="submit" [disabled]="contactForm.invalid">Say hello ;)</button>
+
+      @if (sent) {
+        <p class="contact__success">Thanks! Your message has been sent.</p>
+      }
     </form>
   </div>
 </section>

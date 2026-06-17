@@ -55,6 +55,13 @@
     max-width: 617px;
   }
 
+  // ein Feld + seine Fehlermeldung
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
   // Name / E-Mail / Nachricht
   &__field {
     width: 100%;
@@ -73,6 +80,21 @@
       outline: none;
       border-width: 2px;
     }
+
+    // Angular setzt diese Klassen automatisch bei ungültigen, berührten Feldern
+    &.ng-invalid.ng-touched {
+      border-color: #e61c40;
+    }
+  }
+
+  &__error {
+    font-size: 14px;
+    color: #e61c40;
+  }
+
+  &__success {
+    font-size: var(--fs-body);
+    color: var(--color-blue);
   }
 
   &__message {
@@ -98,7 +120,7 @@
     }
   }
 
-  // grau = noch nicht absendbar; wird Tag 10 aktiv (blau), wenn das Formular gültig ist
+  // grau & nicht klickbar solange das Formular ungültig ist
   &__send {
     align-self: flex-start;
     padding: 15px 30px;
@@ -108,6 +130,20 @@
     background: var(--color-white);
     color: #bbbbbb;
     font-size: var(--fs-subtitle);
+    cursor: not-allowed;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+    // sobald alles ausgefüllt/gültig ist -> blau & klickbar
+    &:enabled {
+      border-color: var(--color-blue);
+      color: var(--color-blue);
+      cursor: pointer;
+    }
+
+    &:enabled:hover {
+      background: var(--color-blue);
+      color: var(--color-white);
+    }
   }
 
   @media (max-width: 900px) {
