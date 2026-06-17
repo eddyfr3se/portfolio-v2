@@ -18,6 +18,15 @@
   background: url('/assets/icons/logo-header.svg') center / contain no-repeat;
 }
 
+// Unterseiten (Privacy): kein blauer Kreis hinterm Logo -> Logo & Burger blau
+.header--inner .logo {
+  background-image: url('/assets/icons/logo-header-blue.svg');
+}
+
+.header--inner .burger span {
+  background: var(--color-blue);
+}
+
 .menu {
   display: flex;
   align-items: center;

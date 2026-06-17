@@ -1,5 +1,5 @@
-<header class="header" [class.menu-open]="menuOpen">
-  <a href="#home" class="logo" (click)="closeMenu()" aria-label="Startseite"></a>
+<header class="header" [class.menu-open]="menuOpen" [class.header--inner]="!isHome">
+  <a routerLink="/" class="logo" (click)="closeMenu()" aria-label="Startseite"></a>
 
   <button
     class="burger"
