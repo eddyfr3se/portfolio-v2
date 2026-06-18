@@ -1,0 +1,83 @@
+.footer {
+  position: relative;
+  padding: clamp(48px, 6vw, 80px) 5vw;
+  background: radial-gradient(circle at 30% 10%, var(--color-blue) 35%, var(--color-blue-dark) 100%);
+  color: var(--color-white);
+  text-align: center;
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 69px;
+    background: url('/assets/icons/logo-header.svg') center / contain no-repeat;
+  }
+
+  &__copy {
+    font-size: var(--fs-subtitle);
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &__social img {
+    width: 30px;
+    height: 30px;
+    // weiß auf blauem Footer
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+  }
+
+  &__social a:hover img {
+    transform: scale(1.15);
+  }
+
+  &__legal {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--color-white);
+    font-size: var(--fs-body);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  // schwebt unten rechts, scrollt nach oben
+  &__top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    background: var(--color-blue);
+    color: var(--color-white);
+    font-size: 22px;
+    box-shadow: var(--shadow-card);
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: var(--color-blue-dark);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__bar {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}

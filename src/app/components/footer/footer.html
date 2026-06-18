@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="footer__bar">
+    <a routerLink="/" class="footer__logo" aria-label="Startseite"></a>
+
+    <p class="footer__copy">© Christopher Rauch {{ year }}</p>
+
+    <div class="footer__social">
+      <a href="https://github.com/eddyfr3se" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/icons/icon-github.svg" alt="" />
+      </a>
+      <a href="mailto:krawall-kreativ.de@outlook.de" aria-label="E-Mail">
+        <img src="assets/icons/icon-email.svg" alt="" />
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <img src="assets/icons/icon-linkedin.svg" alt="" />
+      </a>
+    </div>
+  </div>
+
+  <a routerLink="/legal-notice" class="footer__legal">Legal Notice</a>
+
+  <!-- nach oben scrollen -->
+  <button class="footer__top" (click)="scrollTop()" aria-label="Nach oben">↑</button>
+</footer>
