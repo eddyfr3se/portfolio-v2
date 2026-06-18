@@ -9,7 +9,7 @@
   <div class="card__text">
     <h3 class="card__name">{{ project().name }}</h3>
     <p class="card__stack">{{ project().stack }}</p>
-    <p class="card__desc">{{ project().description }}</p>
+    <p class="card__desc">{{ project().description | translate }}</p>
     <a class="card__btn" [href]="project().githubUrl" target="_blank" rel="noopener">Github</a>
   </div>
 </article>

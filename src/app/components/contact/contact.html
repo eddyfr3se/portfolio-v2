@@ -4,55 +4,50 @@
   <span class="contact__ball contact__ball--left" aria-hidden="true"></span>
   <span class="contact__ball contact__ball--dot" aria-hidden="true"></span>
 
-  <h2 class="contact__title">Contact</h2>
+  <h2 class="contact__title">{{ 'nav.contact' | translate }}</h2>
 
   <div class="contact__body">
     <div class="contact__intro">
-      <h3 class="contact__heading">Got a problem to solve?</h3>
-      <!-- Platzhalter, echten Text liefert noch der Nutzer (DE/EN) -->
-      <p class="contact__text">
-        Encourage people to contact you and describe what role you are interested in.
-        Show that you will add value to their projects through your work.
-      </p>
+      <h3 class="contact__heading">{{ 'contact.heading' | translate }}</h3>
+      <p class="contact__text">{{ 'contact.text' | translate }}</p>
       <p class="contact__cta">
-        Need a Frontend developer? <strong>Contact me!</strong>
+        {{ 'contact.cta' | translate }}<strong>{{ 'contact.ctaStrong' | translate }}</strong>
       </p>
     </div>
 
     <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="contact__group">
-        <input class="contact__field" type="text" placeholder="Your name" formControlName="name" />
+        <input class="contact__field" type="text" [placeholder]="'contact.name' | translate" formControlName="name" />
         @if (name.touched && name.invalid) {
-          <p class="contact__error">Please enter your name.</p>
+          <p class="contact__error">{{ 'contact.errName' | translate }}</p>
         }
       </div>
 
       <div class="contact__group">
-        <input class="contact__field" type="email" placeholder="Your email" formControlName="email" />
+        <input class="contact__field" type="email" [placeholder]="'contact.email' | translate" formControlName="email" />
         @if (email.touched && email.invalid) {
-          <p class="contact__error">Please enter a valid email.</p>
+          <p class="contact__error">{{ 'contact.errEmail' | translate }}</p>
         }
       </div>
 
       <div class="contact__group">
-        <textarea class="contact__field contact__message" placeholder="Your message" formControlName="message"></textarea>
+        <textarea class="contact__field contact__message" [placeholder]="'contact.message' | translate" formControlName="message"></textarea>
         @if (message.touched && message.invalid) {
-          <p class="contact__error">Please enter a message.</p>
+          <p class="contact__error">{{ 'contact.errMessage' | translate }}</p>
         }
       </div>
 
       <label class="contact__privacy">
         <input type="checkbox" formControlName="privacy" />
         <span>
-          I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my
-          data as outlined.
+          {{ 'contact.privacyPre' | translate }}<a routerLink="/privacy-policy">{{ 'contact.privacyLink' | translate }}</a>{{ 'contact.privacyPost' | translate }}
         </span>
       </label>
 
-      <button class="contact__send" type="submit" [disabled]="contactForm.invalid">Say hello ;)</button>
+      <button class="contact__send" type="submit" [disabled]="contactForm.invalid">{{ 'contact.send' | translate }}</button>
 
       @if (sent) {
-        <p class="contact__success">Thanks! Your message has been sent.</p>
+        <p class="contact__success">{{ 'contact.success' | translate }}</p>
       }
     </form>
   </div>

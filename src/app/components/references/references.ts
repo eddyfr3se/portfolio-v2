@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { Testimonial } from '../../models/testimonial';
 
 @Component({
   selector: 'app-references',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './references.html',
   styleUrl: './references.scss',
 })
@@ -11,25 +12,22 @@ export class References {
   // welche Karte auf Mobile gerade sichtbar ist
   current = 0;
 
-  // Platzhalter aus Figma, echte Zitate liefert noch der Nutzer
+  // project und quote sind Übersetzungs-Schlüssel, der Text steht in den i18n-Dateien
   testimonials: Testimonial[] = [
     {
       name: 'James Rugman',
-      project: 'Project Join',
-      quote:
-        '"Sofia is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend her as a colleague."',
+      project: 'references.t1Project',
+      quote: 'references.t1Quote',
     },
     {
       name: 'Evelyn Marx',
-      project: 'Project DA Bubble',
-      quote:
-        '"Sofia is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."',
+      project: 'references.t2Project',
+      quote: 'references.t2Quote',
     },
     {
       name: 'Noah Müller',
-      project: 'Project Pollo Loco',
-      quote:
-        '"Sofia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."',
+      project: 'references.t3Project',
+      quote: 'references.t3Quote',
     },
   ];
 

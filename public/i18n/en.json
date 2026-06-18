@@ -4,5 +4,59 @@
     "skills": "Skill set",
     "work": "My work",
     "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello! I am Christopher",
+    "scroll": "Scroll down →"
+  },
+  "about": {
+    "title1": "Let's work",
+    "title2": "together",
+    "iam": "I am",
+    "loc1": "located in",
+    "loc2": "Munich",
+    "rem1": "open to work",
+    "rem2": "remote",
+    "rel1": "open to",
+    "rel2": "relocate",
+    "intro": "I'm a frontend developer based in Munich. I like building clean, responsive interfaces and turning ideas into real products — always curious and always learning something new.",
+    "send": "Send a message"
+  },
+  "skills": {
+    "title": "Skill set"
+  },
+  "projects": {
+    "title": "My work",
+    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "daBubble": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+    "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+  },
+  "references": {
+    "title": "Need a teamplayer?",
+    "subtitle": "Here is what my colleagues say about me.",
+    "t1Project": "Project Join",
+    "t1Quote": "\"Sofia is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend her as a colleague.\"",
+    "t2Project": "Project DA Bubble",
+    "t2Quote": "\"Sofia is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.\"",
+    "t3Project": "Project Pollo Loco",
+    "t3Quote": "\"Sofia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person.\""
+  },
+  "contact": {
+    "heading": "Got a problem to solve?",
+    "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+    "cta": "Need a Frontend developer? ",
+    "ctaStrong": "Contact me!",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "errName": "Please enter your name.",
+    "errEmail": "Please enter a valid email.",
+    "errMessage": "Please enter a message.",
+    "privacyPre": "I've read the ",
+    "privacyLink": "privacy policy",
+    "privacyPost": " and agree to the processing of my data as outlined.",
+    "send": "Say hello ;)",
+    "success": "Thanks! Your message has been sent."
   }
 }

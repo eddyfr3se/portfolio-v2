@@ -4,5 +4,59 @@
     "skills": "Skills",
     "work": "Meine Arbeit",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo! Ich bin Christopher",
+    "scroll": "Runterscrollen →"
+  },
+  "about": {
+    "title1": "Lass uns",
+    "title2": "zusammenarbeiten",
+    "iam": "Ich bin",
+    "loc1": "ansässig in",
+    "loc2": "München",
+    "rem1": "offen für",
+    "rem2": "Remote",
+    "rel1": "offen für",
+    "rel2": "Umzug",
+    "intro": "Ich bin Frontend-Entwickler aus München. Ich baue gerne saubere, responsive Oberflächen und mache aus Ideen echte Produkte – immer neugierig und immer am Lernen.",
+    "send": "Nachricht senden"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Meine Arbeit",
+    "join": "Aufgabenmanager nach dem Kanban-Prinzip. Aufgaben per Drag-and-Drop erstellen und organisieren, Nutzer und Kategorien zuweisen.",
+    "polloLoco": "Jump-, Run- und Wurfspiel auf Basis objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "daBubble": "Ein sehr einfaches Customer-Relationship-Management-System mit CRUD-Funktionalität.",
+    "pokedex": "Auf Basis der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  },
+  "references": {
+    "title": "Brauchst du einen Teamplayer?",
+    "subtitle": "Das sagen meine Kolleginnen und Kollegen über mich.",
+    "t1Project": "Projekt Join",
+    "t1Quote": "„Sofia ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt sauberen Code. Ich kann sie als Kollegin sehr empfehlen.“",
+    "t2Project": "Projekt DA Bubble",
+    "t2Quote": "„Sofia ist eine vertrauenswürdige Teamplayerin und kommt auch mit dem Druck von Deadlines zurecht. Strukturierte Arbeit und sauberer Code.“",
+    "t3Project": "Projekt Pollo Loco",
+    "t3Quote": "„Sofia hat Inhalte gemeinsam mit dem Team entwickelt, aufbereitet und geliefert. Sie ist ein zuverlässiger und freundlicher Mensch.“"
+  },
+  "contact": {
+    "heading": "Hast du ein Problem zu lösen?",
+    "text": "Ermutige Leute, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeig, dass du mit deiner Arbeit einen Mehrwert für ihre Projekte schaffst.",
+    "cta": "Du brauchst einen Frontend-Entwickler? ",
+    "ctaStrong": "Schreib mir!",
+    "name": "Dein Name",
+    "email": "Deine E-Mail",
+    "message": "Deine Nachricht",
+    "errName": "Bitte gib deinen Namen ein.",
+    "errEmail": "Bitte gib eine gültige E-Mail ein.",
+    "errMessage": "Bitte gib eine Nachricht ein.",
+    "privacyPre": "Ich habe die ",
+    "privacyLink": "Datenschutzerklärung",
+    "privacyPost": " gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "send": "Sag Hallo ;)",
+    "success": "Danke! Deine Nachricht wurde gesendet."
   }
 }

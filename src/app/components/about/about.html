@@ -6,38 +6,33 @@
   <div class="about__top">
     <div class="about__main">
       <h2 class="about__title">
-        <span>Let's work</span>
-        <span>together</span>
+        <span>{{ 'about.title1' | translate }}</span>
+        <span>{{ 'about.title2' | translate }}</span>
       </h2>
 
       <div class="about__availability">
-        <p class="about__iam">I am</p>
+        <p class="about__iam">{{ 'about.iam' | translate }}</p>
 
         <ul class="avail">
           <li>
             <img class="icon" src="assets/icons/icon-location.svg" alt="" />
-            <span>located in<br />Munich</span>
+            <span>{{ 'about.loc1' | translate }}<br />{{ 'about.loc2' | translate }}</span>
           </li>
           <li>
             <img class="icon" src="assets/icons/icon-remote.svg" alt="" />
-            <span>open to work<br />remote</span>
+            <span>{{ 'about.rem1' | translate }}<br />{{ 'about.rem2' | translate }}</span>
           </li>
           <li>
             <img class="icon" src="assets/icons/icon-relocate.svg" alt="" />
-            <span>open to<br />relocate</span>
+            <span>{{ 'about.rel1' | translate }}<br />{{ 'about.rel2' | translate }}</span>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="about__intro">
-      <!-- Platzhalter-Text, echten About-Text liefert noch der Nutzer (DE/EN) -->
-      <p>
-        I'm a frontend developer based in Munich. I like building clean,
-        responsive interfaces and turning ideas into real products — always
-        curious and always learning something new.
-      </p>
-      <a href="#contact" class="btn">Send a message</a>
+      <p>{{ 'about.intro' | translate }}</p>
+      <a href="#contact" class="btn">{{ 'about.send' | translate }}</a>
     </div>
   </div>
 </section>

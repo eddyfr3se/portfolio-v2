@@ -1,13 +1,13 @@
 <section class="references" id="references">
-  <h2 class="references__title">Need a teamplayer?</h2>
-  <p class="references__subtitle">Here is what my colleagues say about me.</p>
+  <h2 class="references__title">{{ 'references.title' | translate }}</h2>
+  <p class="references__subtitle">{{ 'references.subtitle' | translate }}</p>
 
   <div class="references__list">
     @for (item of testimonials; track item.name) {
       <article class="card" [class.is-active]="$index === current">
         <p class="card__name">{{ item.name }}</p>
-        <p class="card__project">{{ item.project }}</p>
-        <p class="card__quote">{{ item.quote }}</p>
+        <p class="card__project">{{ item.project | translate }}</p>
+        <p class="card__quote">{{ item.quote | translate }}</p>
       </article>
     }
   </div>
