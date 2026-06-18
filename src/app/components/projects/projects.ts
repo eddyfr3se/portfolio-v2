@@ -41,7 +41,7 @@ export class Projects {
       description:
         'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       image: 'assets/img/project-pokedex.png',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/eddyfr3se/Pokedex-',
     },
   ];
 }
