@@ -1,5 +1,6 @@
 .about {
   position: relative;
+  overflow: hidden; // schneidet die obere Hälfte der großen Kugel am Übergang ab
   padding: clamp(64px, 8vw, 140px) 5vw;
   background: var(--color-white);
 }
@@ -19,8 +20,9 @@
   transform: translateX(-50%);
 }
 
+// ganzer Kreis, hängt unter der Naht ins Weiße (nicht abgeschnitten)
 .ball--small {
-  top: -45px;
+  top: 16px;
   left: 72%;
   width: 90px;
   height: 90px;
