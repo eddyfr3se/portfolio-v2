@@ -6,6 +6,23 @@
   flex-direction: column;
   gap: 32px;
 
+  // Zurück-Pfeil zur Startseite
+  &__back {
+    align-self: flex-start;
+    width: 39px;
+    height: 39px;
+
+    img {
+      width: 39px;
+      height: 39px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
   &__title {
     font-family: var(--font-display);
     font-weight: 400;

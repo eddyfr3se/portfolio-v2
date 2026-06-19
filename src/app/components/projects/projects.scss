@@ -11,32 +11,44 @@
     z-index: 0;
   }
 
+  // groß, oben links angeschnitten (Figma: Ellipse 4, 447px)
   &__ball--left {
-    top: 12%;
-    left: -180px;
-    width: 393px;
-    height: 393px;
+    top: 14%;
+    left: -200px;
+    width: 447px;
+    height: 447px;
   }
 
+  // riesig, rechts angeschnitten (Figma: Ellipse 9, 741px – hinter Pollo Loco)
   &__ball--right {
-    top: 28%;
-    right: -300px;
-    width: 650px;
-    height: 650px;
+    top: 23%;
+    right: -380px;
+    width: 741px;
+    height: 741px;
   }
 
-  &__ball--mid {
-    top: 66%;
-    left: 16%;
-    width: 238px;
-    height: 238px;
-  }
-
+  // kleiner Punkt links (Figma: Ellipse 10, 51px)
   &__ball--dot {
-    top: 45%;
-    left: 20%;
+    top: 40%;
+    left: 1%;
     width: 51px;
     height: 51px;
+  }
+
+  // mittel, links unten angeschnitten (Figma: Ellipse 11, 270px)
+  &__ball--mid {
+    top: 64%;
+    left: -110px;
+    width: 270px;
+    height: 270px;
+  }
+
+  // klein, rechts unten (Figma: Ellipse 12, 98px)
+  &__ball--small {
+    top: 82%;
+    right: 3%;
+    width: 98px;
+    height: 98px;
   }
 
   &__title {
@@ -58,9 +70,43 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 900px) {
-    &__ball {
-      display: none;
+  // auf kleinen Screens bleiben die Kugeln sichtbar, aber nur als Rand-Akzent
+  @media (max-width: 1024px) {
+    &__ball--left {
+      top: 3%;
+      left: -130px;
+      width: 190px;
+      height: 190px;
+    }
+
+    &__ball--right {
+      top: 24%;
+      right: -130px;
+      left: auto;
+      width: 190px;
+      height: 190px;
+    }
+
+    &__ball--mid {
+      top: 80%;
+      left: -120px;
+      width: 170px;
+      height: 170px;
+    }
+
+    &__ball--dot {
+      top: 52%;
+      left: auto;
+      right: -16px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &__ball--small {
+      top: 90%;
+      right: -10px;
+      width: 60px;
+      height: 60px;
     }
   }
 }

@@ -1,12 +1,20 @@
 .hero {
   position: relative;
+  // Hintergrund läuft über die volle Breite
+  background: linear-gradient(135deg, #ffffff 0%, #eef1ff 100%);
+}
+
+// Inhalt zentriert, max. Desktop-Breite (Widescreen-Vorgabe aus Figma)
+.hero__inner {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
   gap: 2vw;
   padding: 0 5vw;
-  background: linear-gradient(135deg, #ffffff 0%, #eef1ff 100%);
 }
 
 .hero__circle {
@@ -127,23 +135,22 @@
 }
 
 @media (max-width: 1024px) {
-  .hero {
+  .hero__inner {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     min-height: auto;
-    padding: 0 0 32px;
+    padding: 0;
   }
 
-  // großer blauer Kreis, nach rechts versetzt: rechte Kante endet am Bildschirmrand,
-  // unten links bleibt weiß (wie im Figma) – nicht mittig/symmetrisch
+  // exakt aus Figma (Mobile-Frame, 390): Kreis 612px @ x-228/y-22.
+  // In vw: rechte Kante liegt bei -58.5vw + 157vw = 98.5vw -> endet immer am rechten Rand.
   .hero__circle {
-    top: -48vw;
-    left: -24vw;
+    top: -5.6vw;
+    left: -58.5vw;
     right: auto;
     transform: none;
-    width: 187vw;
-    max-width: 800px;
+    width: 157vw;
     height: auto;
     aspect-ratio: 1;
     border-radius: 50%;
