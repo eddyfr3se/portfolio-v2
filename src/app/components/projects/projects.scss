@@ -4,14 +4,12 @@
   padding: clamp(64px, 8vw, 130px) 5vw;
   background: var(--color-white);
 
-  // Kugeln liegen hinter den Karten, teils am Rand angeschnitten
   &__ball {
     position: absolute;
     background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
     z-index: 0;
   }
 
-  // groß, oben links angeschnitten (Figma: Ellipse 4, 447px)
   &__ball--left {
     top: 14%;
     left: -200px;
@@ -19,7 +17,6 @@
     height: 447px;
   }
 
-  // riesig, rechts angeschnitten (Figma: Ellipse 9, 741px – hinter Pollo Loco)
   &__ball--right {
     top: 23%;
     right: -380px;
@@ -27,7 +24,6 @@
     height: 741px;
   }
 
-  // kleiner Punkt links (Figma: Ellipse 10, 51px)
   &__ball--dot {
     top: 40%;
     left: 1%;
@@ -35,7 +31,6 @@
     height: 51px;
   }
 
-  // mittel, links unten angeschnitten (Figma: Ellipse 11, 270px)
   &__ball--mid {
     top: 64%;
     left: -110px;
@@ -43,7 +38,6 @@
     height: 270px;
   }
 
-  // klein, rechts unten (Figma: Ellipse 12, 98px)
   &__ball--small {
     top: 82%;
     right: 3%;
@@ -51,8 +45,6 @@
     height: 98px;
   }
 
-  // oben bei der Überschrift (Figma: Ellipse 7, 108px) – lugt von oben rein,
-  // damit es die längere deutsche Überschrift nicht überdeckt
   &__ball--upper-left {
     top: -50px;
     left: 36%;
@@ -60,7 +52,6 @@
     height: 108px;
   }
 
-  // oben rechts neben der Überschrift (Figma: Ellipse 8, 183px)
   &__ball--upper-right {
     top: 186px;
     left: 78.75%;
@@ -68,7 +59,6 @@
     height: 183px;
   }
 
-  // linksbündig wie im Figma, auf gleicher Breite wie die Kartenliste
   &__title {
     position: relative;
     z-index: 1;
@@ -90,7 +80,6 @@
     margin: 0 auto;
   }
 
-  // auf kleinen Screens bleiben die Kugeln sichtbar, aber nur als Rand-Akzent
   @media (max-width: 1024px) {
     &__ball--left {
       top: 3%;

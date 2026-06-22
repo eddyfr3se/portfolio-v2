@@ -1,18 +1,16 @@
 .about {
   position: relative;
-  overflow: hidden; // schneidet die obere Hälfte der großen Kugel am Übergang ab
+  overflow: hidden;
   padding: clamp(64px, 8vw, 140px) 5vw;
   background: var(--color-white);
 }
 
-// blaue Kugeln am oberen Rand, ragen in den Hero hoch (SVG aus Figma)
 .ball {
   position: absolute;
   background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 2;
 }
 
-// exakt aus Figma: Ellipse 5 (206px) sitzt auf der Naht Hero/About
 .ball--big {
   top: -103px;
   left: 50.8%;
@@ -21,7 +19,6 @@
   transform: translateX(-50%);
 }
 
-// Ellipse 6 (82px), rechts daneben, knapp unter der Naht
 .ball--small {
   top: 32px;
   left: 74.7%;
@@ -34,7 +31,7 @@
   display: flex;
   align-items: flex-start;
   gap: 5vw;
-  // Inhalt auf Desktop-Breite zentriert (Widescreen)
+
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -49,8 +46,7 @@
 .about__title {
   font-family: var(--font-display);
   font-weight: 600;
-  // Obergrenze so gewählt, dass das lange Wort "zusammenarbeiten" in eine
-  // Zeile passt und die Intro-Spalte daneben nicht zerquetscht wird
+
   font-size: clamp(32px, 6vw, 64px);
   line-height: 1.05;
   color: var(--color-blue);
@@ -119,7 +115,6 @@
   font-size: var(--fs-subtitle);
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
-  // gleiche States wie der Github-Button (Figma "Button primary s2")
   &:hover {
     border-color: transparent;
     background: radial-gradient(circle at 25% 25%, var(--color-blue) 45%, var(--color-blue-dark) 100%);
@@ -134,14 +129,11 @@
 }
 
 @media (max-width: 1024px) {
-  // Platz oben für die Kugeln; overflow hidden schneidet den Teil der großen
-  // Kugel ab, der über die Foto-Unterkante nach oben ragt (Halbkugel-Look)
   .about {
     overflow: hidden;
     padding-top: 150px;
   }
 
-  // große Kugel sitzt auf der Naht: 50% oben (Hero), 50% unten (Weiß)
   .ball--big {
     top: 0;
     left: 16%;
@@ -150,7 +142,6 @@
     transform: translateY(-50%);
   }
 
-  // kleine Kugel rechts, knapp unter der Naht im Weißen
   .ball--small {
     top: 0;
     left: 72%;

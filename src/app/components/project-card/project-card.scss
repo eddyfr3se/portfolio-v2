@@ -7,7 +7,6 @@
   &--reverse {
     flex-direction: row-reverse;
 
-    // bei gespiegelten Karten ist der Text rechtsbündig (wie im Figma)
     .card__text {
       align-items: flex-end;
       text-align: right;
@@ -57,7 +56,6 @@
     font-size: var(--fs-subtitle);
     transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
-    // Hover/Click sind so in der Figma-Komponente "Button primary s2" definiert
     &:hover {
       border-color: transparent;
       background: radial-gradient(circle at 25% 25%, var(--color-blue) 45%, var(--color-blue-dark) 100%);

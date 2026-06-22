@@ -1,17 +1,14 @@
-// zentrale Design-Werte aus Figma (Version 2)
+
 :root {
-  // Farben
   --color-blue: #5988ff;
-  --color-blue-dark: #0043f0; // dunkles Ende vom Verlauf (Buttons, Kugeln)
+  --color-blue-dark: #0043f0;
   --color-purple: #797ef3;
   --color-white: #ffffff;
   --color-black: #000000;
 
-  // Schrift
   --font-main: 'Montserrat', sans-serif;
-  --font-display: 'Baloo 2', sans-serif; // für die großen Hero-Schriftzüge
+  --font-display: 'Baloo 2', sans-serif;
 
-  // Schriftgrößen
   --fs-h1: 96px;
   --fs-h2: 64px;
   --fs-greeting: 64px;
@@ -20,7 +17,6 @@
   --fs-tag: 18px;
   --fs-body: 16px;
 
-  // Schatten
   --shadow-card: 5px 5px 15px rgba(0, 0, 0, 0.15);
   --shadow-skill: 0 4px 9px rgba(0, 0, 0, 0.45);
 }

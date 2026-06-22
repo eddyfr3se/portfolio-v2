@@ -1,4 +1,3 @@
-// Datenmodell für eine Projektkarte
 export interface Project {
   name: string;
   stack: string;

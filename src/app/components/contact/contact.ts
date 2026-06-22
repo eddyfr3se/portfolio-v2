@@ -12,23 +12,18 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Contact {
   private fb = inject(FormBuilder);
 
-  // schickt das Formular an das PHP-Skript auf meiner Domain
   private mailUrl = 'https://christopherrauch.de/sendMail.php';
 
-  // wird true, sobald erfolgreich abgeschickt wurde
   sent = false;
-  // wird true, wenn das Senden fehlschlägt
   error = false;
 
   contactForm = this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
     message: ['', Validators.required],
-    // Checkbox muss angehakt sein
     privacy: [false, Validators.requiredTrue],
   });
 
-  // kurze Zugriffe fürs Template (Fehlerprüfung)
   get name() {
     return this.contactForm.controls.name;
   }
@@ -41,7 +36,6 @@ export class Contact {
     return this.contactForm.controls.message;
   }
 
-  // async, weil wir await fetch(...) und await response.json() nutzen
   async onSubmit() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
@@ -54,11 +48,9 @@ export class Contact {
     const { name, email, message } = this.contactForm.value;
 
     try {
-      // schickt die Daten als JSON an das PHP-Skript auf dem Server
       const response = await fetch(this.mailUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        // die Keys müssen 1:1 so heißen wie in der PHP (name, email, message)
         body: JSON.stringify({ name, email, message }),
       });
 
@@ -71,7 +63,6 @@ export class Contact {
         this.error = true;
       }
     } catch (e) {
-      // z.B. kein Netz oder Server nicht erreichbar
       this.error = true;
     }
   }

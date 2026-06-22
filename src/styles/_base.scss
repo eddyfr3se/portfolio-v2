@@ -1,4 +1,4 @@
-// globale Grundtypografie
+
 body {
   font-family: var(--font-main);
   font-size: var(--fs-body);
@@ -14,7 +14,6 @@ h3 {
   line-height: 1.05;
 }
 
-// sichtbarer Rahmen beim Durch-Tabben mit der Tastatur
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--color-blue);

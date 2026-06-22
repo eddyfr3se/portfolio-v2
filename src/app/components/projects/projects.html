@@ -1,5 +1,4 @@
 <section class="projects" id="work">
-  <!-- blaue Deko-Kugeln im Hintergrund (Positionen aus Figma) -->
   <span class="projects__ball projects__ball--left" aria-hidden="true"></span>
   <span class="projects__ball projects__ball--right" aria-hidden="true"></span>
   <span class="projects__ball projects__ball--dot" aria-hidden="true"></span>
@@ -7,9 +6,7 @@
   <span class="projects__ball projects__ball--small" aria-hidden="true"></span>
   <span class="projects__ball projects__ball--upper-left" aria-hidden="true"></span>
   <span class="projects__ball projects__ball--upper-right" aria-hidden="true"></span>
-
   <h2 class="projects__title">{{ 'projects.title' | translate }}</h2>
-
   <div class="projects__list">
     @for (project of projects; track project.name) {
       <app-project-card [project]="project" [reverse]="$index % 2 === 1" />

@@ -9,10 +9,8 @@ import { Testimonial } from '../../models/testimonial';
   styleUrl: './references.scss',
 })
 export class References {
-  // welche Karte auf Mobile gerade sichtbar ist
   current = 0;
 
-  // project und quote sind Übersetzungs-Schlüssel, der Text steht in den i18n-Dateien
   testimonials: Testimonial[] = [
     {
       name: 'James Rugman',

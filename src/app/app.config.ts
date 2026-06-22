@@ -13,7 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     provideTranslateService({
-      // lädt die JSON-Dateien aus public/i18n/
       loader: provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json' }),
       fallbackLang: 'de',
       lang: 'de',

@@ -22,6 +22,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,16 +31,36 @@
     color: var(--color-white);
     font-size: var(--fs-body);
 
-    img {
+    img:not(.skills__hover) {
       height: 75px;
       width: auto;
       object-fit: contain;
     }
 
-    // im Figma gibt es eine Bold-Variante als Hover
     &:hover span {
       font-weight: 700;
     }
+  }
+
+  &__hover {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 200px;
+    max-width: none;
+    height: auto;
+    transform: translate(-50%, 8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+  }
+
+  &__item:hover &__hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -8px);
   }
 
   @media (max-width: 768px) {
@@ -48,7 +69,7 @@
       row-gap: 36px;
     }
 
-    &__item img {
+    &__item img:not(.skills__hover) {
       height: 56px;
     }
   }

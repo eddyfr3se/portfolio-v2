@@ -1,10 +1,9 @@
 .hero {
   position: relative;
-  // Hintergrund läuft über die volle Breite
+
   background: linear-gradient(135deg, #ffffff 0%, #eef1ff 100%);
 }
 
-// Inhalt zentriert, max. Desktop-Breite (Widescreen-Vorgabe aus Figma)
 .hero__inner {
   position: relative;
   max-width: 1440px;
@@ -19,12 +18,12 @@
 
 .hero__circle {
   position: absolute;
-  // exakt aus Figma (Desktop): Kreis 892px @ x-199 / y-71
+
   top: -71px;
   left: -199px;
   width: clamp(520px, 62vw, 892px);
   aspect-ratio: 1;
-  // gleicher Verlauf wie die kleinen Kugeln (Figma-SVG)
+
   background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 0;
 }
@@ -35,7 +34,7 @@
   flex: 0 0 auto;
   align-self: flex-end;
   width: clamp(340px, 48vw, 700px);
-  // hoher Ausschnitt: Kopf oben, unten von der Section abgeschnitten
+
   height: 86vh;
   max-height: 900px;
   object-fit: cover;
@@ -94,7 +93,6 @@
   color: var(--color-blue);
 }
 
-// die Mobile-Variante ("Scroll down →") ist auf Desktop aus
 .hero__scroll-phrase {
   display: none;
 }
@@ -131,7 +129,7 @@
 .hero__social img {
   width: 20px;
   height: 20px;
-  // Glyphen weiß einfärben (liegen auf blauem Kreis)
+
   filter: brightness(0) invert(1);
 }
 
@@ -144,8 +142,6 @@
     padding: 0;
   }
 
-  // exakt aus Figma (Mobile-Frame, 390): Kreis 612px @ x-228/y-22.
-  // In vw: rechte Kante liegt bei -58.5vw + 157vw = 98.5vw -> endet immer am rechten Rand.
   .hero__circle {
     top: -5.6vw;
     left: -58.5vw;
@@ -157,7 +153,6 @@
     border-radius: 50%;
   }
 
-  // Text liegt auf der blauen Fläche -> weiß, linksbündig
   .hero__text {
     order: 1;
     z-index: 2;
@@ -182,7 +177,6 @@
     font-size: clamp(48px, 13.5vw, 74px);
   }
 
-  // Person steht vor der Fläche und ragt unten ins Weiße
   .hero__photo {
     order: 2;
     z-index: 1;
@@ -194,7 +188,6 @@
     margin-top: -8px;
   }
 
-  // Scroll-Hinweis rechts, vertikal, im weißen Bereich (rechts neben der Person)
   .hero__scroll {
     right: 14px;
     top: auto;
@@ -202,7 +195,6 @@
     z-index: 2;
   }
 
-  // auf Mobile "SCROLL"-Wort + Linie aus, dafür "Scroll down →" vertikal
   .hero__scroll-word,
   .hero__scroll .line {
     display: none;
@@ -216,14 +208,11 @@
     letter-spacing: 1px;
   }
 
-  // Social-Leiste auf Mobile aus (kommt im Footer)
   .hero__social {
     display: none;
   }
 }
 
-// Widescreen (>1440): eigener Aufbau aus Figma "Prototype_Widescreen" -
-// runder, voll sichtbarer Kreis (612px) mit der Person mittig drauf, Text links daneben
 @media (min-width: 1441px) {
   .hero__circle {
     top: 26%;
@@ -260,7 +249,6 @@
   }
 }
 
-// Einblenden beim Laden
 @keyframes heroFadeUp {
   from {
     opacity: 0;
@@ -307,7 +295,6 @@
   animation: heroFadeUp 0.5s ease 0.8s both;
 }
 
-// wer Animationen reduziert haben will, kriegt keine
 @media (prefers-reduced-motion: reduce) {
   .greeting,
   .job-title .line1,

@@ -1,15 +1,12 @@
 <header class="header" [class.menu-open]="menuOpen" [class.header--inner]="!isHome">
   <a routerLink="/" class="logo" (click)="closeMenu()" aria-label="Startseite"></a>
-
   <button
     class="burger"
     [class.open]="menuOpen"
     (click)="toggleMenu()"
-    aria-label="Menü öffnen"
+    [attr.aria-label]="menuOpen ? 'Menü schließen' : 'Menü öffnen'"
   >
-    <span></span>
-    <span></span>
-    <span></span>
+    <img src="assets/icons/burger-menu.svg" alt="" />
   </button>
 
   <div class="menu" [class.open]="menuOpen">

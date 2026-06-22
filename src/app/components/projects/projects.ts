@@ -10,7 +10,6 @@ import { ProjectCard } from '../project-card/project-card';
   styleUrl: './projects.scss',
 })
 export class Projects {
-  // description ist ein Übersetzungs-Schlüssel, der Text steht in den i18n-Dateien
   projects: Project[] = [
     {
       name: 'Join',

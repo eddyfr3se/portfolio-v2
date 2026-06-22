@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,8 +8,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './footer.scss',
 })
 export class Footer {
-  // Jahr für den Copyright-Text
   year = new Date().getFullYear();
+  showTop = false;
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.showTop = window.scrollY > 500;
+  }
 
   scrollTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

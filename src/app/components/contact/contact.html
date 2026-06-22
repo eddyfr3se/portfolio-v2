@@ -1,11 +1,8 @@
 <section class="contact" id="contact">
-  <!-- blaue Deko-Kugeln im Hintergrund (Positionen aus Figma) -->
   <span class="contact__ball contact__ball--top" aria-hidden="true"></span>
   <span class="contact__ball contact__ball--left" aria-hidden="true"></span>
   <span class="contact__ball contact__ball--small" aria-hidden="true"></span>
-
   <h2 class="contact__title">{{ 'nav.contact' | translate }}</h2>
-
   <div class="contact__body">
     <div class="contact__intro">
       <h3 class="contact__heading">{{ 'contact.heading' | translate }}</h3>
@@ -45,7 +42,6 @@
       </label>
 
       <button class="contact__send" type="submit" [disabled]="contactForm.invalid">{{ 'contact.send' | translate }}</button>
-
       @if (sent) {
         <p class="contact__success">{{ 'contact.success' | translate }}</p>
       }

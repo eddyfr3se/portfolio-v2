@@ -4,14 +4,12 @@
   padding: clamp(64px, 8vw, 130px) 5vw;
   background: var(--color-white);
 
-  // blaue Deko-Kugeln, am Rand angeschnitten, hinter dem Inhalt
   &__ball {
     position: absolute;
     z-index: 0;
     background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   }
 
-  // oben, mittig-rechts (Figma: Ellipse 13, 147px @ x930)
   &__ball--top {
     top: 3%;
     left: 64%;
@@ -19,7 +17,6 @@
     height: 147px;
   }
 
-  // links, mittlere Höhe (Figma: Ellipse 11, 204px @ x242/y5905)
   &__ball--left {
     top: 56%;
     left: 16%;
@@ -27,7 +24,6 @@
     height: 204px;
   }
 
-  // klein, unten rechts (Figma: Ellipse 14, 73px @ x1276)
   &__ball--small {
     top: 84%;
     left: 88%;
@@ -38,7 +34,7 @@
   &__title {
     position: relative;
     z-index: 1;
-    // Inhalt auf Desktop-Breite zentriert (Widescreen)
+
     max-width: 1240px;
     margin: 0 auto;
     font-family: var(--font-display);
@@ -53,7 +49,7 @@
     display: flex;
     gap: clamp(40px, 6vw, 110px);
     align-items: flex-start;
-    // Inhalt auf Desktop-Breite zentriert (Widescreen)
+
     max-width: 1240px;
     margin: 40px auto 0;
   }
@@ -97,14 +93,12 @@
     max-width: 617px;
   }
 
-  // ein Feld + seine Fehlermeldung
   &__group {
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
 
-  // Name / E-Mail / Nachricht
   &__field {
     width: 100%;
     padding: 15px 25px;
@@ -123,7 +117,6 @@
       border-width: 2px;
     }
 
-    // Angular setzt diese Klassen automatisch bei ungültigen, berührten Feldern
     &.ng-invalid.ng-touched {
       border-color: #e61c40;
     }
@@ -162,7 +155,6 @@
     }
   }
 
-  // grau & nicht klickbar solange das Formular ungültig ist
   &__send {
     align-self: flex-start;
     padding: 15px 30px;
@@ -175,7 +167,6 @@
     cursor: not-allowed;
     transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
-    // sobald alles ausgefüllt/gültig ist -> blau & klickbar
     &:enabled {
       border-color: var(--color-blue);
       color: var(--color-blue);
@@ -199,7 +190,6 @@
       width: 100%;
     }
 
-    // Kugeln bleiben sichtbar, aber nur als Rand-Akzent
     &__ball--top {
       top: 1%;
       left: auto;

@@ -9,9 +9,7 @@ import { Project } from '../../models/project';
   styleUrl: './project-card.scss',
 })
 export class ProjectCard {
-  // Daten kommen vom Parent (projects) rein
   project = input.required<Project>();
 
-  // jede zweite Karte ist gespiegelt (Bild rechts)
   reverse = input(false);
 }

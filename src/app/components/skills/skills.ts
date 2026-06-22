@@ -8,7 +8,6 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './skills.scss',
 })
 export class Skills {
-  // Reihenfolge wie im Figma
   skills = [
     { name: 'Angular', icon: 'angular.svg' },
     { name: 'TypeScript', icon: 'typescript.svg' },
