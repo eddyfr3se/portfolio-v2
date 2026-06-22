@@ -129,9 +129,9 @@
     z-index: 30;
   }
 
-  // Burger-Striche weiß auf dem Kreis, beim Öffnen (X auf hellem Overlay) blau
+  // Burger-Striche grau (oben rechts liegt weißer Hintergrund), beim Öffnen blau
   .burger span {
-    background: var(--color-white);
+    background: #666;
   }
 
   .header.menu-open .burger span {
