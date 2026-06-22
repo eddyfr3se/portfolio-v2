@@ -24,7 +24,7 @@ export class Projects {
       stack: 'JavaScript | HTML | CSS',
       description: 'projects.polloLoco',
       image: 'assets/img/project-pollo-loco.png',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/eddyfr3se/Pollo-Loco-',
     },
     {
       name: 'DA Bubble',

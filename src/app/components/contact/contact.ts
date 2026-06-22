@@ -12,8 +12,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Contact {
   private fb = inject(FormBuilder);
 
-  // !!! HIER DEINE DOMAIN EINTRAGEN (nach dem Deployment) !!!
-  private mailUrl = 'https://deine-domain.de/sendMail.php';
+  // schickt das Formular an das PHP-Skript auf meiner Domain
+  private mailUrl = 'https://christopherrauch.de/sendMail.php';
 
   // wird true, sobald erfolgreich abgeschickt wurde
   sent = false;
