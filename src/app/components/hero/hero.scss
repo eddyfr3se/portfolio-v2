@@ -14,13 +14,14 @@
   display: flex;
   align-items: flex-end;
   gap: 2vw;
-  padding: 0 5vw;
+  padding: 0 2vw;
 }
 
 .hero__circle {
   position: absolute;
-  top: -130px;
-  left: -185px;
+  // exakt aus Figma (Desktop): Kreis 892px @ x-199 / y-71
+  top: -71px;
+  left: -199px;
   width: clamp(520px, 62vw, 892px);
   aspect-ratio: 1;
   // gleicher Verlauf wie die kleinen Kugeln (Figma-SVG)
@@ -33,7 +34,7 @@
   z-index: 1;
   flex: 0 0 auto;
   align-self: flex-end;
-  width: clamp(340px, 46vw, 600px);
+  width: clamp(340px, 48vw, 700px);
   // hoher Ausschnitt: Kopf oben, unten von der Section abgeschnitten
   height: 86vh;
   max-height: 900px;
@@ -218,6 +219,44 @@
   // Social-Leiste auf Mobile aus (kommt im Footer)
   .hero__social {
     display: none;
+  }
+}
+
+// Widescreen (>1440): eigener Aufbau aus Figma "Prototype_Widescreen" -
+// runder, voll sichtbarer Kreis (612px) mit der Person mittig drauf, Text links daneben
+@media (min-width: 1441px) {
+  .hero__circle {
+    top: 26%;
+    left: 0;
+    width: 612px;
+  }
+
+  .hero__photo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 612px;
+    height: 74vh;
+    max-height: 1076px;
+  }
+
+  .hero__text {
+    position: absolute;
+    left: 50%;
+    top: 31%;
+    padding-top: 0;
+  }
+
+  .hero__scroll {
+    left: 69%;
+    right: auto;
+  }
+
+  .hero__social {
+    top: 84%;
+    bottom: auto;
+    left: 91%;
+    right: auto;
   }
 }
 

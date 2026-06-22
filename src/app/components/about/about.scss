@@ -12,20 +12,21 @@
   z-index: 2;
 }
 
+// exakt aus Figma: Ellipse 5 (206px) sitzt auf der Naht Hero/About
 .ball--big {
-  top: -110px;
-  left: 49%;
-  width: 220px;
-  height: 220px;
+  top: -103px;
+  left: 50.8%;
+  width: 206px;
+  height: 206px;
   transform: translateX(-50%);
 }
 
-// ganzer Kreis, hängt unter der Naht ins Weiße (nicht abgeschnitten)
+// Ellipse 6 (82px), rechts daneben, knapp unter der Naht
 .ball--small {
-  top: 16px;
-  left: 72%;
-  width: 90px;
-  height: 90px;
+  top: 32px;
+  left: 74.7%;
+  width: 82px;
+  height: 82px;
   transform: translateX(-50%);
 }
 
@@ -48,9 +49,10 @@
 .about__title {
   font-family: var(--font-display);
   font-weight: 600;
-  // kleinere Untergrenze, damit das lange Wort "zusammenarbeiten" bei 320px passt
-  font-size: clamp(32px, 8.4vw, 121px);
-  line-height: 1;
+  // Obergrenze so gewählt, dass das lange Wort "zusammenarbeiten" in eine
+  // Zeile passt und die Intro-Spalte daneben nicht zerquetscht wird
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.05;
   color: var(--color-blue);
 }
 
