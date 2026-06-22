@@ -12,8 +12,13 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Contact {
   private fb = inject(FormBuilder);
 
+  // !!! HIER DEINE DOMAIN EINTRAGEN (nach dem Deployment) !!!
+  private mailUrl = 'https://deine-domain.de/sendMail.php';
+
   // wird true, sobald erfolgreich abgeschickt wurde
   sent = false;
+  // wird true, wenn das Senden fehlschlägt
+  error = false;
 
   contactForm = this.fb.group({
     name: ['', Validators.required],
@@ -36,14 +41,38 @@ export class Contact {
     return this.contactForm.controls.message;
   }
 
-  onSubmit() {
+  // async, weil wir await fetch(...) und await response.json() nutzen
+  async onSubmit() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
       return;
     }
 
-    // (kein Backend – wir zeigen nur die Bestätigung und leeren das Formular)
-    this.sent = true;
-    this.contactForm.reset();
+    this.sent = false;
+    this.error = false;
+
+    const { name, email, message } = this.contactForm.value;
+
+    try {
+      // schickt die Daten als JSON an das PHP-Skript auf dem Server
+      const response = await fetch(this.mailUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        // die Keys müssen 1:1 so heißen wie in der PHP (name, email, message)
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        this.sent = true;
+        this.contactForm.reset();
+      } else {
+        this.error = true;
+      }
+    } catch (e) {
+      // z.B. kein Netz oder Server nicht erreichbar
+      this.error = true;
+    }
   }
 }

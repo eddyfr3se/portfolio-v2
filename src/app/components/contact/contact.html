@@ -49,6 +49,9 @@
       @if (sent) {
         <p class="contact__success">{{ 'contact.success' | translate }}</p>
       }
+      @if (error) {
+        <p class="contact__error">{{ 'contact.sendError' | translate }}</p>
+      }
     </form>
   </div>
 </section>

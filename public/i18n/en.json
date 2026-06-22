@@ -57,6 +57,7 @@
     "privacyLink": "privacy policy",
     "privacyPost": " and agree to the processing of my data as outlined.",
     "send": "Say hello ;)",
-    "success": "Thanks! Your message has been sent."
+    "success": "Thanks! Your message has been sent.",
+    "sendError": "Sending failed. Please try again later."
   }
 }

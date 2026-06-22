@@ -57,6 +57,7 @@
     "privacyLink": "Datenschutzerklärung",
     "privacyPost": " gelesen und stimme der Verarbeitung meiner Daten zu.",
     "send": "Sag Hallo ;)",
-    "success": "Danke! Deine Nachricht wurde gesendet."
+    "success": "Danke! Deine Nachricht wurde gesendet.",
+    "sendError": "Senden fehlgeschlagen. Bitte versuch es später nochmal."
   }
 }
