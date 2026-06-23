@@ -94,6 +94,7 @@
   }
 
   &__group {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -101,7 +102,7 @@
 
   &__field {
     width: 100%;
-    padding: 15px 25px;
+    padding: 15px 56px 15px 25px;
     border: 1px solid var(--color-blue);
     border-radius: 10px;
     background: var(--color-white);
@@ -120,11 +121,41 @@
     &.ng-invalid.ng-touched {
       border-color: #e61c40;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: var(--color-black);
+      box-shadow: 0 0 0 1000px var(--color-white) inset;
+      caret-color: var(--color-black);
+    }
+  }
+
+  &__state {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  &__state--top {
+    top: 18px;
+    transform: none;
   }
 
   &__error {
     font-size: 14px;
     color: #e61c40;
+  }
+
+  &__group &__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
   }
 
   &__success {

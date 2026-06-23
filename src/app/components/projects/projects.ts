@@ -24,6 +24,7 @@ export class Projects {
       description: 'projects.polloLoco',
       image: 'assets/img/project-pollo-loco.png',
       githubUrl: 'https://github.com/eddyfr3se/Pollo-Loco-',
+      liveUrl: 'https://pollo-loco.christopherrauch.de',
     },
     {
       name: 'DA Bubble',
@@ -38,6 +39,7 @@ export class Projects {
       description: 'projects.pokedex',
       image: 'assets/img/project-pokedex.png',
       githubUrl: 'https://github.com/eddyfr3se/Pokedex-',
+      liveUrl: 'https://pokedex.christopherrauch.de',
     },
   ];
 }

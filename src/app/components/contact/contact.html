@@ -16,6 +16,11 @@
       <div class="contact__group">
         <input class="contact__field" type="text" [placeholder]="'contact.name' | translate" formControlName="name" />
         @if (name.touched && name.invalid) {
+          <img class="contact__state" src="assets/icons/icon-error.svg" alt="" />
+        } @else if (name.touched && name.valid) {
+          <img class="contact__state" src="assets/icons/icon-success.svg" alt="" />
+        }
+        @if (name.touched && name.invalid) {
           <p class="contact__error">{{ 'contact.errName' | translate }}</p>
         }
       </div>
@@ -23,12 +28,22 @@
       <div class="contact__group">
         <input class="contact__field" type="email" [placeholder]="'contact.email' | translate" formControlName="email" />
         @if (email.touched && email.invalid) {
+          <img class="contact__state" src="assets/icons/icon-error.svg" alt="" />
+        } @else if (email.touched && email.valid) {
+          <img class="contact__state" src="assets/icons/icon-success.svg" alt="" />
+        }
+        @if (email.touched && email.invalid) {
           <p class="contact__error">{{ 'contact.errEmail' | translate }}</p>
         }
       </div>
 
       <div class="contact__group">
         <textarea class="contact__field contact__message" [placeholder]="'contact.message' | translate" formControlName="message"></textarea>
+        @if (message.touched && message.invalid) {
+          <img class="contact__state contact__state--top" src="assets/icons/icon-error.svg" alt="" />
+        } @else if (message.touched && message.valid) {
+          <img class="contact__state contact__state--top" src="assets/icons/icon-success.svg" alt="" />
+        }
         @if (message.touched && message.invalid) {
           <p class="contact__error">{{ 'contact.errMessage' | translate }}</p>
         }
