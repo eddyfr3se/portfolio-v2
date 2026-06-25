@@ -25,17 +25,17 @@
   }
 
   &__ball--dot {
-    top: 40%;
-    left: 1%;
+    top: 47%;
+    left: 4%;
     width: 51px;
     height: 51px;
   }
 
   &__ball--mid {
-    top: 64%;
-    left: -110px;
-    width: 270px;
-    height: 270px;
+    top: 70%;
+    left: 146px;
+    width: 200px;
+    height: 200px;
   }
 
   &__ball--small {
@@ -82,47 +82,40 @@
 
   @media (max-width: 1024px) {
     &__ball--left {
-      top: 3%;
-      left: -130px;
-      width: 190px;
-      height: 190px;
+      top: 15%;
+      left: -90px;
+      width: 160px;
+      height: 160px;
     }
 
     &__ball--right {
-      top: 24%;
-      right: -130px;
+      top: 38%;
+      right: -90px;
       left: auto;
-      width: 190px;
-      height: 190px;
+      width: 160px;
+      height: 160px;
     }
 
     &__ball--mid {
-      top: 80%;
-      left: -120px;
-      width: 170px;
-      height: 170px;
+      top: 61%;
+      left: -90px;
+      width: 160px;
+      height: 160px;
     }
 
     &__ball--dot {
-      top: 52%;
-      left: auto;
-      right: -16px;
-      width: 44px;
-      height: 44px;
+      display: none;
     }
 
     &__ball--small {
-      top: 90%;
-      right: -10px;
-      width: 60px;
-      height: 60px;
+      top: 83%;
+      right: -20px;
+      width: 50px;
+      height: 50px;
     }
 
     &__ball--upper-left {
-      top: 2%;
-      left: -30px;
-      width: 70px;
-      height: 70px;
+      display: none;
     }
 
     &__ball--upper-right {

@@ -222,25 +222,22 @@
     }
 
     &__ball--top {
-      top: 1%;
+      top: 20px;
       left: auto;
-      right: -45px;
-      width: 95px;
-      height: 95px;
+      right: 25%;
+      width: 75px;
+      height: 75px;
     }
 
     &__ball--left {
-      top: 62%;
-      left: -95px;
-      width: 160px;
-      height: 160px;
+      display: none;
     }
 
     &__ball--small {
       top: auto;
-      bottom: 6%;
+      bottom: 8%;
       left: auto;
-      right: -12px;
+      right: -15px;
       width: 48px;
       height: 48px;
     }
