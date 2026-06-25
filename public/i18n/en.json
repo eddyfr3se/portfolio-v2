@@ -27,20 +27,18 @@
   },
   "projects": {
     "title": "My work",
-    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "daBubble": "A very Simple Customer Relationship Management system working with CRUD functionality.",
     "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
   },
   "references": {
     "title": "Need a teamplayer?",
     "subtitle": "Here is what my colleagues say about me.",
-    "t1Project": "Project Join",
-    "t1Quote": "\"Christopher is a reliable and friendly person. Works in a structured way and writes clean code. I highly recommend him as a colleague.\"",
-    "t2Project": "Project DA Bubble",
-    "t2Quote": "\"Christopher is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clean code.\"",
-    "t3Project": "Project Pollo Loco",
-    "t3Quote": "\"Christopher developed, formatted and delivered content in collaboration with the team members. He is a reliable and friendly person.\""
+    "t1Project": "Project [Name]",
+    "t1Quote": "\"A real quote from someone you have worked with goes here.\"",
+    "t2Project": "Project [Name]",
+    "t2Quote": "\"A second real quote — for example from a study group or an internship.\"",
+    "t3Project": "Project [Name]",
+    "t3Quote": "\"A third real quote. If you don't have any, we leave this section out.\""
   },
   "contact": {
     "heading": "Got a problem to solve?",
@@ -59,5 +57,37 @@
     "send": "Say hello ;)",
     "success": "Thanks! Your message has been sent.",
     "sendError": "Sending failed. Please try again later."
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "imprint": "Imprint",
+    "contact": "Contact",
+    "acceptanceTitle": "Acceptance of terms",
+    "acceptanceText": "By accessing and using <span class=\"legal__hl\">Portfolio</span> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+    "scopeTitle": "Scope and ownership of the product",
+    "scopeText1": "<span class=\"legal__hl\">Portfolio</span> has been developed as part of a student group project in a web development bootcamp at the <span class=\"legal__hl\">Developer Akademie GmbH</span>. It has an educational purpose and is not intended for extensive personal &amp; business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+    "scopeText2": "The design of <span class=\"legal__hl\">Portfolio</span> is owned by the <span class=\"legal__hl\">Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+    "proprietaryTitle": "Proprietary rights",
+    "proprietaryText": "Aside from the design owned by <span class=\"legal__hl\">Developer Akademie GmbH</span>, we, the listed students, retain all proprietary rights in <span class=\"legal__hl\">Portfolio</span>, including any associated copyrighted material, trademarks, and other proprietary information.",
+    "useTitle": "Use of the product",
+    "useText": "<span class=\"legal__hl\">Portfolio</span> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <span class=\"legal__hl\">Portfolio</span> for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <span class=\"legal__hl\">Portfolio</span>.",
+    "disclaimerTitle": "Disclaimer of warranties and limitation of liability",
+    "disclaimerText": "<span class=\"legal__hl\">Portfolio</span> is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the <span class=\"legal__hl\">Developer Akademie</span>, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <span class=\"legal__hl\">Portfolio</span>.",
+    "indemnityTitle": "Indemnity",
+    "indemnityText1": "You agree to indemnify, defend and hold harmless us, the listed students, the <span class=\"legal__hl\">Developer Akademie</span>, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of <span class=\"legal__hl\">Portfolio</span> and/or your breach of this Legal Notice.",
+    "indemnityText2": "For any questions or notices, please contact us at krawall-kreativ.de@outlook.de.",
+    "date": "Date: July 26, 2025"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "responsibleTitle": "Who is responsible",
+    "responsibleText": "This website is a personal portfolio. The person responsible for data processing is Christopher Rauch, Krüthstraße 13, 50733 Köln, Germany. You can reach me by email at krawall-kreativ.de@outlook.de.",
+    "dataTitle": "Which data is processed",
+    "dataText1": "When you use the contact form, the name, email address and message you enter are sent to me by email so that I can reply to your request. I only use this data to answer you and do not pass it on to third parties.",
+    "dataText2": "When you visit the site, the hosting provider automatically stores technical information such as your IP address, browser type and the time of access in server log files. This is needed to deliver the website securely and reliably.",
+    "legalBasisTitle": "Legal basis and storage",
+    "legalBasisText": "The processing of the contact form is based on Art. 6 (1) (a) and (f) GDPR (your consent and my legitimate interest in answering your request). I keep your message only as long as it is needed to handle your inquiry and delete it afterwards.",
+    "rightsTitle": "Your rights",
+    "rightsText": "You have the right to access, correct or delete your personal data, to restrict its processing and to object to it. To make use of these rights, simply contact me at krawall-kreativ.de@outlook.de."
   }
 }

@@ -27,20 +27,18 @@
   },
   "projects": {
     "title": "Meine Arbeit",
-    "join": "Aufgabenmanager nach dem Kanban-Prinzip. Aufgaben per Drag-and-Drop erstellen und organisieren, Nutzer und Kategorien zuweisen.",
     "polloLoco": "Jump-, Run- und Wurfspiel auf Basis objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-    "daBubble": "Ein sehr einfaches Customer-Relationship-Management-System mit CRUD-Funktionalität.",
     "pokedex": "Auf Basis der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
   },
   "references": {
     "title": "Brauchst du einen Teamplayer?",
     "subtitle": "Das sagen meine Kolleginnen und Kollegen über mich.",
-    "t1Project": "Projekt Join",
-    "t1Quote": "„Christopher ist ein zuverlässiger und freundlicher Mensch. Arbeitet strukturiert und schreibt sauberen Code. Ich kann ihn als Kollegen sehr empfehlen.“",
-    "t2Project": "Projekt DA Bubble",
-    "t2Quote": "„Christopher ist ein vertrauenswürdiger Teamplayer und kommt auch mit dem Druck von Deadlines zurecht. Strukturierte Arbeit und sauberer Code.“",
-    "t3Project": "Projekt Pollo Loco",
-    "t3Quote": "„Christopher hat Inhalte gemeinsam mit dem Team entwickelt, aufbereitet und geliefert. Er ist ein zuverlässiger und freundlicher Mensch.“"
+    "t1Project": "Projekt [Name]",
+    "t1Quote": "„Hier kommt ein echtes Zitat einer Person hin, mit der du zusammengearbeitet hast.“",
+    "t2Project": "Projekt [Name]",
+    "t2Quote": "„Ein zweites echtes Zitat — z. B. von einer Lerngruppe oder einem Praktikum.“",
+    "t3Project": "Projekt [Name]",
+    "t3Quote": "„Ein drittes echtes Zitat. Wenn du keine hast, lassen wir diese Sektion weg.“"
   },
   "contact": {
     "heading": "Hast du ein Problem zu lösen?",
@@ -59,5 +57,37 @@
     "send": "Sag Hallo ;)",
     "success": "Danke! Deine Nachricht wurde gesendet.",
     "sendError": "Senden fehlgeschlagen. Bitte versuch es später nochmal."
+  },
+  "legal": {
+    "title": "Impressum",
+    "imprint": "Angaben gemäß § 5 TMG",
+    "contact": "Kontakt",
+    "acceptanceTitle": "Annahme der Bedingungen",
+    "acceptanceText": "Mit dem Zugriff auf und der Nutzung von <span class=\"legal__hl\">Portfolio</span> (Produkt) erkennst du die folgenden Bedingungen sowie alle Richtlinien und Änderungen an, die dir von Zeit zu Zeit vorgelegt werden können. Wir, die genannten Schüler, können die Bedingungen jederzeit ohne Vorankündigung aktualisieren oder ändern.",
+    "scopeTitle": "Umfang und Eigentum am Produkt",
+    "scopeText1": "<span class=\"legal__hl\">Portfolio</span> wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der <span class=\"legal__hl\">Developer Akademie GmbH</span> entwickelt. Es dient Bildungszwecken und ist nicht für umfangreiche private &amp; geschäftliche Nutzung gedacht. Daher können wir keine durchgehende Verfügbarkeit, Zuverlässigkeit, Richtigkeit oder andere Qualitätsaspekte dieses Produkts garantieren.",
+    "scopeText2": "Das Design von <span class=\"legal__hl\">Portfolio</span> ist Eigentum der <span class=\"legal__hl\">Developer Akademie GmbH</span>. Unbefugte Nutzung, Vervielfältigung, Änderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt.",
+    "proprietaryTitle": "Schutzrechte",
+    "proprietaryText": "Abgesehen vom Design, das der <span class=\"legal__hl\">Developer Akademie GmbH</span> gehört, behalten wir, die genannten Schüler, alle Schutzrechte an <span class=\"legal__hl\">Portfolio</span>, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen geschützten Informationen.",
+    "useTitle": "Nutzung des Produkts",
+    "useText": "<span class=\"legal__hl\">Portfolio</span> ist ausschließlich für rechtmäßige Zwecke bestimmt, im Einklang mit allen geltenden Gesetzen und Vorschriften. Jede Nutzung von <span class=\"legal__hl\">Portfolio</span> für illegale Aktivitäten oder um eine andere Person zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist strengstens untersagt. Du bist allein für deine Interaktionen mit anderen Nutzern von <span class=\"legal__hl\">Portfolio</span> verantwortlich.",
+    "disclaimerTitle": "Haftungsausschluss und Haftungsbeschränkung",
+    "disclaimerText": "<span class=\"legal__hl\">Portfolio</span> wird „wie besehen“ ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf die stillschweigende Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten. In keinem Fall haften wir, die genannten Schüler, oder die <span class=\"legal__hl\">Developer Akademie</span> für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Verlust von Goodwill, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus der Nutzung oder Leistung von <span class=\"legal__hl\">Portfolio</span> ergeben.",
+    "indemnityTitle": "Freistellung",
+    "indemnityText1": "Du erklärst dich damit einverstanden, uns, die genannten Schüler, die <span class=\"legal__hl\">Developer Akademie</span> sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeiter von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen und schadlos zu halten, die sich aus deiner Nutzung von <span class=\"legal__hl\">Portfolio</span> und/oder deinem Verstoß gegen dieses Impressum ergeben.",
+    "indemnityText2": "Bei Fragen oder Mitteilungen kontaktiere uns bitte unter krawall-kreativ.de@outlook.de.",
+    "date": "Stand: 26. Juli 2025"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "responsibleTitle": "Verantwortlicher",
+    "responsibleText": "Diese Website ist ein persönliches Portfolio. Verantwortlich für die Datenverarbeitung ist Christopher Rauch, Krüthstraße 13, 50733 Köln, Deutschland. Du erreichst mich per E-Mail unter krawall-kreativ.de@outlook.de.",
+    "dataTitle": "Welche Daten verarbeitet werden",
+    "dataText1": "Wenn du das Kontaktformular nutzt, werden der Name, die E-Mail-Adresse und die Nachricht, die du eingibst, per E-Mail an mich gesendet, damit ich auf deine Anfrage antworten kann. Ich nutze diese Daten nur, um dir zu antworten, und gebe sie nicht an Dritte weiter.",
+    "dataText2": "Beim Besuch der Seite speichert der Hosting-Anbieter automatisch technische Informationen wie deine IP-Adresse, den Browsertyp und den Zeitpunkt des Zugriffs in Server-Logdateien. Das ist nötig, um die Website sicher und zuverlässig auszuliefern.",
+    "legalBasisTitle": "Rechtsgrundlage und Speicherung",
+    "legalBasisText": "Die Verarbeitung des Kontaktformulars erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a und f DSGVO (deine Einwilligung und mein berechtigtes Interesse, deine Anfrage zu beantworten). Ich bewahre deine Nachricht nur so lange auf, wie es zur Bearbeitung deiner Anfrage nötig ist, und lösche sie danach.",
+    "rightsTitle": "Deine Rechte",
+    "rightsText": "Du hast das Recht, deine personenbezogenen Daten einzusehen, zu berichtigen oder zu löschen, die Verarbeitung einzuschränken und ihr zu widersprechen. Um diese Rechte wahrzunehmen, kontaktiere mich einfach unter krawall-kreativ.de@outlook.de."
   }
 }

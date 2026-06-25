@@ -13,17 +13,17 @@ export class References {
 
   testimonials: Testimonial[] = [
     {
-      name: 'James Rugman',
+      name: '[Name der Referenz]',
       project: 'references.t1Project',
       quote: 'references.t1Quote',
     },
     {
-      name: 'Evelyn Marx',
+      name: '[Name der Referenz]',
       project: 'references.t2Project',
       quote: 'references.t2Quote',
     },
     {
-      name: 'Noah Müller',
+      name: '[Name der Referenz]',
       project: 'references.t3Project',
       quote: 'references.t3Quote',
     },

@@ -12,26 +12,12 @@ import { ProjectCard } from '../project-card/project-card';
 export class Projects {
   projects: Project[] = [
     {
-      name: 'Join',
-      stack: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description: 'projects.join',
-      image: 'assets/img/project-join.png',
-      githubUrl: '#',
-    },
-    {
       name: 'Pollo Loco',
       stack: 'JavaScript | HTML | CSS',
       description: 'projects.polloLoco',
       image: 'assets/img/project-pollo-loco.png',
       githubUrl: 'https://github.com/eddyfr3se/Pollo-Loco-',
       liveUrl: 'https://pollo-loco.christopherrauch.de',
-    },
-    {
-      name: 'DA Bubble',
-      stack: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description: 'projects.daBubble',
-      image: 'assets/img/project-da-bubble.png',
-      githubUrl: '#',
     },
     {
       name: 'Pokédex',
