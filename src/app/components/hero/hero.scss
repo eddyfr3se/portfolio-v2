@@ -213,6 +213,12 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .hero__scroll .line {
+    height: 140px;
+  }
+}
+
 @media (min-width: 1441px) {
   .hero__circle {
     top: 26%;

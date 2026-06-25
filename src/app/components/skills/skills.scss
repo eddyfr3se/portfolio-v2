@@ -30,6 +30,7 @@
     gap: 10px;
     color: var(--color-white);
     font-size: var(--fs-body);
+    transition: transform 0.2s ease;
 
     img:not(.skills__hover) {
       height: 75px;
@@ -37,8 +38,8 @@
       object-fit: contain;
     }
 
-    &:hover span {
-      font-weight: 700;
+    &:hover {
+      transform: translateY(-6px);
     }
   }
 
