@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-
+  overflow: clip;
   background: linear-gradient(135deg, #ffffff 0%, #eef1ff 100%);
 }
 
@@ -9,7 +9,6 @@
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   gap: 2vw;
@@ -113,12 +112,7 @@
 }
 
 .hero__social a {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--color-blue);
+  display: block;
   transition: transform 0.2s ease;
 }
 
@@ -127,10 +121,8 @@
 }
 
 .hero__social img {
-  width: 20px;
-  height: 20px;
-
-  filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -244,13 +236,6 @@
 
   .hero__scroll {
     left: 69%;
-    right: auto;
-  }
-
-  .hero__social {
-    top: 84%;
-    bottom: auto;
-    left: 91%;
     right: auto;
   }
 }
