@@ -8,37 +8,32 @@
     position: absolute;
     background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
     z-index: 0;
+    pointer-events: none;
   }
 
   &__ball--left {
-    top: 14%;
+    top: 20%;
     left: -200px;
     width: 447px;
     height: 447px;
   }
 
   &__ball--right {
-    top: 23%;
-    right: -380px;
-    width: 741px;
-    height: 741px;
-  }
-
-  &__ball--dot {
-    top: 47%;
-    left: 4%;
-    width: 51px;
-    height: 51px;
+    top: 55%;
+    right: -200px;
+    width: 480px;
+    height: 480px;
   }
 
   &__ball--mid {
-    top: 70%;
+    top: 93%;
     left: 146px;
     width: 200px;
     height: 200px;
   }
 
   &__ball--small {
+    display: none;
     top: 82%;
     right: 3%;
     width: 98px;
@@ -53,7 +48,7 @@
   }
 
   &__ball--upper-right {
-    top: 186px;
+    top: 60px;
     left: 78.75%;
     width: 183px;
     height: 183px;
@@ -82,32 +77,19 @@
 
   @media (max-width: 1024px) {
     &__ball--left {
-      top: 15%;
-      left: -90px;
-      width: 160px;
-      height: 160px;
+      display: none;
     }
 
     &__ball--right {
-      top: 38%;
-      right: -90px;
-      left: auto;
-      width: 160px;
-      height: 160px;
+      display: none;
     }
 
     &__ball--mid {
-      top: 61%;
-      left: -90px;
-      width: 160px;
-      height: 160px;
-    }
-
-    &__ball--dot {
       display: none;
     }
 
     &__ball--small {
+      display: block;
       top: 83%;
       right: -20px;
       width: 50px;
@@ -119,11 +101,11 @@
     }
 
     &__ball--upper-right {
-      top: 1%;
+      top: 2%;
       left: auto;
-      right: 16px;
-      width: 45px;
-      height: 45px;
+      right: -21px;
+      width: 105px;
+      height: 105px;
     }
   }
 }

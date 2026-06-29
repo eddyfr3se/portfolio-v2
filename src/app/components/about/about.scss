@@ -9,6 +9,7 @@
   position: absolute;
   background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 0;
+  pointer-events: none;
 }
 
 .ball--big {

@@ -25,6 +25,7 @@
 
   background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero__photo {

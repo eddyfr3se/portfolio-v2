@@ -7,6 +7,7 @@
   &__ball {
     position: absolute;
     z-index: 0;
+    pointer-events: none;
     background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   }
 
@@ -226,11 +227,7 @@
     }
 
     &__ball--top {
-      top: 20px;
-      left: auto;
-      right: 25%;
-      width: 75px;
-      height: 75px;
+      display: none;
     }
 
     &__ball--left {

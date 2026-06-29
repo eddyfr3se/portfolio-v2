@@ -17,6 +17,7 @@
   &__ball {
     position: absolute;
     z-index: 0;
+    pointer-events: none;
     background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
   }
 
