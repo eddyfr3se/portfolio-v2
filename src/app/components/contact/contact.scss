@@ -114,12 +114,16 @@
     }
 
     &:focus {
-      outline: none;
-      border-width: 2px;
+      outline: 2px solid var(--color-blue);
+      outline-offset: -1px;
     }
 
     &.ng-invalid.ng-touched {
       border-color: #e61c40;
+    }
+
+    &.ng-invalid.ng-touched:focus {
+      outline-color: #e61c40;
     }
 
     &:-webkit-autofill,
