@@ -8,7 +8,7 @@
 .ball {
   position: absolute;
   background: url('/assets/icons/blue-ball.svg') center / contain no-repeat;
-  z-index: 2;
+  z-index: 0;
 }
 
 .ball--big {
@@ -28,6 +28,8 @@
 }
 
 .about__top {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: flex-start;
   gap: 5vw;
@@ -86,10 +88,50 @@
   line-height: 1.2;
 }
 
-.avail .icon {
+.avail__icon {
+  position: relative;
   flex: 0 0 auto;
-  width: auto;
+  display: inline-flex;
+}
+
+.avail__icon-default,
+.avail__icon-tilt {
+  display: block;
   height: 38px;
+  width: auto;
+}
+
+.avail__icon-default {
+  transition: opacity 0.2s ease;
+}
+
+// Koffer hat kein zweites Bild – er kippt beim Hover nur leicht
+.avail__icon-tilt {
+  transform-origin: bottom center;
+  transition: transform 0.2s ease;
+}
+
+// liegt deckungsgleich über dem Default und wird beim Hover eingeblendet
+.avail__icon-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.avail li:hover .avail__icon-default {
+  opacity: 0;
+}
+
+.avail li:hover .avail__icon-hover {
+  opacity: 1;
+}
+
+.avail li:hover .avail__icon-tilt {
+  transform: rotate(6deg) scale(1.06);
 }
 
 .about__intro {

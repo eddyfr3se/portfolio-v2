@@ -12,15 +12,23 @@
         <p class="about__iam">{{ 'about.iam' | translate }}</p>
         <ul class="avail">
           <li>
-            <img class="icon" src="assets/icons/icon-location.svg" alt="" />
+            <span class="avail__icon">
+              <img class="avail__icon-default" src="assets/icons/icon-location.svg" alt="" />
+              <img class="avail__icon-hover" src="assets/icons/location-hover.svg" alt="" />
+            </span>
             <span>{{ 'about.loc1' | translate }}<br />{{ 'about.loc2' | translate }}</span>
           </li>
           <li>
-            <img class="icon" src="assets/icons/icon-remote.svg" alt="" />
+            <span class="avail__icon">
+              <img class="avail__icon-default" src="assets/icons/icon-remote.svg" alt="" />
+              <img class="avail__icon-hover" src="assets/icons/remote-hover.svg" alt="" />
+            </span>
             <span>{{ 'about.rem1' | translate }}<br />{{ 'about.rem2' | translate }}</span>
           </li>
           <li>
-            <img class="icon" src="assets/icons/icon-relocate.svg" alt="" />
+            <span class="avail__icon">
+              <img class="avail__icon-tilt" src="assets/icons/icon-relocate.svg" alt="" />
+            </span>
             <span>{{ 'about.rel1' | translate }}<br />{{ 'about.rel2' | translate }}</span>
           </li>
         </ul>
@@ -29,7 +37,7 @@
 
     <div class="about__intro">
       <p>{{ 'about.intro' | translate }}</p>
-      <a href="#contact" class="btn">{{ 'about.send' | translate }}</a>
+      <a routerLink="/" fragment="contact" class="btn">{{ 'about.send' | translate }}</a>
     </div>
   </div>
 </section>
