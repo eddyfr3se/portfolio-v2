@@ -11,10 +11,10 @@
 
   <div class="menu" [class.open]="menuOpen">
     <nav class="nav">
-      <a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a>
-      <a href="#skills" (click)="closeMenu()">{{ 'nav.skills' | translate }}</a>
-      <a href="#work" (click)="closeMenu()">{{ 'nav.work' | translate }}</a>
-      <a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a>
+      <a routerLink="/" fragment="about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a>
+      <a routerLink="/" fragment="skills" (click)="closeMenu()">{{ 'nav.skills' | translate }}</a>
+      <a routerLink="/" fragment="work" (click)="closeMenu()">{{ 'nav.work' | translate }}</a>
+      <a routerLink="/" fragment="contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a>
     </nav>
 
     <div class="lang">
