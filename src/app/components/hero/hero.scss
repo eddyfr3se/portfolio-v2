@@ -175,7 +175,8 @@
     z-index: 1;
     align-self: center;
     width: min(440px, 92vw);
-    height: 460px;
+    flex: 1;
+    min-height: 0;
     object-fit: cover;
     object-position: center top;
     margin-top: -8px;
