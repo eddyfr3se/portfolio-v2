@@ -15,7 +15,7 @@ export class Projects {
       name: 'Join',
       stack: 'Angular | TypeScript | HTML | SCSS | Supabase',
       description: 'projects.join',
-      image: 'assets/img/project-join.png',
+      image: 'assets/img/project-join.png?v=figma-20260819',
       githubUrl: 'https://github.com/eddyfr3se/Join',
       liveUrl: 'https://join.christopherrauch.de',
     },
