@@ -27,6 +27,7 @@
   },
   "projects": {
     "title": "Meine Arbeit",
+    "join": "Aufgabenmanager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben, weise Kontakte zu und verschiebe Aufgaben per Drag & Drop zwischen den Bearbeitungsständen.",
     "polloLoco": "Jump-, Run- und Wurfspiel auf Basis objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
     "pokedex": "Auf Basis der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
   },

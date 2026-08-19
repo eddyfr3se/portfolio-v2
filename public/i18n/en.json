@@ -27,6 +27,7 @@
   },
   "projects": {
     "title": "My work",
+    "join": "Task manager based on the Kanban method. Create and organize tasks, assign contacts and move tasks between workflow stages using drag and drop.",
     "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
   },

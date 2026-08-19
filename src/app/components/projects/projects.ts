@@ -12,6 +12,14 @@ import { ProjectCard } from '../project-card/project-card';
 export class Projects {
   projects: Project[] = [
     {
+      name: 'Join',
+      stack: 'Angular | TypeScript | HTML | SCSS | Supabase',
+      description: 'projects.join',
+      image: 'assets/img/project-join.png',
+      githubUrl: 'https://github.com/eddyfr3se/Join',
+      liveUrl: 'https://join.christopherrauch.de',
+    },
+    {
       name: 'Pollo Loco',
       stack: 'JavaScript | HTML | CSS',
       description: 'projects.polloLoco',
