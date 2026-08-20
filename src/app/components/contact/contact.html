@@ -14,7 +14,7 @@
 
     <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="contact__group">
-        <input class="contact__field" type="text" [placeholder]="'contact.name' | translate" formControlName="name" />
+        <input class="contact__field" id="contact-name" name="name" type="text" autocomplete="name" [placeholder]="'contact.name' | translate" formControlName="name" />
         @if (name.touched && name.invalid) {
           <img class="contact__state" src="assets/icons/icon-error.svg" alt="" />
         } @else if (name.touched && name.valid) {
@@ -26,7 +26,7 @@
       </div>
 
       <div class="contact__group">
-        <input class="contact__field" type="email" [placeholder]="'contact.email' | translate" formControlName="email" />
+        <input class="contact__field" id="contact-email" name="email" type="email" autocomplete="email" [placeholder]="'contact.email' | translate" formControlName="email" />
         @if (email.touched && email.invalid) {
           <img class="contact__state" src="assets/icons/icon-error.svg" alt="" />
         } @else if (email.touched && email.valid) {
@@ -38,7 +38,7 @@
       </div>
 
       <div class="contact__group">
-        <textarea class="contact__field contact__message" [placeholder]="'contact.message' | translate" formControlName="message"></textarea>
+        <textarea class="contact__field contact__message" id="contact-message" name="message" [placeholder]="'contact.message' | translate" formControlName="message"></textarea>
         @if (message.touched && message.invalid) {
           <img class="contact__state contact__state--top" src="assets/icons/icon-error.svg" alt="" />
         } @else if (message.touched && message.valid) {
