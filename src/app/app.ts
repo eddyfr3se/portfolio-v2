@@ -16,7 +16,7 @@ export class App {
   private translate = inject(TranslateService);
 
   constructor() {
-    const saved = localStorage.getItem('lang') ?? 'de';
+    const saved = globalThis.localStorage?.getItem('lang') ?? 'de';
     this.translate.use(saved);
   }
 }

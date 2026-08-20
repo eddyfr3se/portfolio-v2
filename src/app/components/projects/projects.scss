@@ -108,4 +108,10 @@
       height: 105px;
     }
   }
+
+  @media (max-width: 480px) {
+    &__ball--upper-right {
+      display: none;
+    }
+  }
 }

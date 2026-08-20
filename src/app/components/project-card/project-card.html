@@ -12,9 +12,9 @@
     <p class="card__desc">{{ project().description | translate }}</p>
     <div class="card__links">
       @if (project().liveUrl) {
-        <a class="card__btn" [href]="project().liveUrl" target="_blank" rel="noopener">Live</a>
+        <a class="card__btn" [href]="project().liveUrl" target="_blank" rel="noopener noreferrer">Live</a>
       }
-      <a class="card__btn" [href]="project().githubUrl" target="_blank" rel="noopener">Github</a>
+      <a class="card__btn" [href]="project().githubUrl" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
 </article>

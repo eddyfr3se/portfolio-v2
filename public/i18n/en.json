@@ -28,8 +28,8 @@
   "projects": {
     "title": "My work",
     "join": "Task manager based on the Kanban method. Create and organize tasks, assign contacts and move tasks between workflow stages using drag and drop.",
-    "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    "polloLoco": "A jump-and-run game built with object-oriented JavaScript. Help Pepe collect coins and Tabasco salsa before taking on the Crazy Hen.",
+    "pokedex": "A lightweight Pokédex built with the PokéAPI that presents Pokémon information in a clear and accessible format."
   },
   "references": {
     "title": "Need a teamplayer?",
@@ -42,10 +42,10 @@
     "t3Quote": "\"A third real quote. If you don't have any, we leave this section out.\""
   },
   "contact": {
-    "heading": "Got a problem to solve?",
-    "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
-    "cta": "Need a Frontend developer? ",
-    "ctaStrong": "Contact me!",
+    "heading": "Have a project in mind?",
+    "text": "I'm looking for a frontend developer position and enjoy projects where clear design, clean implementation and reliable collaboration matter. Send me a message — I'd be happy to learn more about your idea.",
+    "cta": "Looking for a frontend developer? ",
+    "ctaStrong": "Let's talk!",
     "name": "Your name",
     "email": "Your email",
     "message": "Your message",

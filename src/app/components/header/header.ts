@@ -17,14 +17,14 @@ export class Header {
     return path === '/';
   }
 
-  lang = localStorage.getItem('lang') ?? 'de';
+  lang = globalThis.localStorage?.getItem('lang') ?? 'de';
 
   menuOpen = false;
 
   setLang(value: string) {
     this.lang = value;
     this.translate.use(value);
-    localStorage.setItem('lang', value);
+    globalThis.localStorage?.setItem('lang', value);
   }
 
   toggleMenu() {

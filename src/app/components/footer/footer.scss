@@ -92,4 +92,10 @@
       justify-self: center;
     }
   }
+
+  @media (max-width: 480px) {
+    &__top {
+      display: none;
+    }
+  }
 }

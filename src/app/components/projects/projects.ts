@@ -29,7 +29,7 @@ export class Projects {
     },
     {
       name: 'Pokédex',
-      stack: 'JavaScript | HTML | CSS | Api',
+      stack: 'JavaScript | HTML | CSS | API',
       description: 'projects.pokedex',
       image: 'assets/img/project-pokedex.png',
       githubUrl: 'https://github.com/eddyfr3se/Pokedex-',

@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideHttpClient(),
     provideTranslateService({
-      loader: provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json?v=join-project' }),
+      loader: provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json?v=portfolio-feedback-20260820' }),
       fallbackLang: 'de',
       lang: 'de',
     }),

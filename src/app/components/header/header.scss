@@ -23,6 +23,14 @@
   background-image: url('/assets/icons/logo-header-blue.svg');
 }
 
+// On wide screens the decorative hero circle begins below the header.
+// Use the blue logo there so it remains visible on the light background.
+@media (min-width: 1441px) {
+  .logo {
+    background-image: url('/assets/icons/logo-header-blue.svg');
+  }
+}
+
 .menu {
   display: flex;
   align-items: center;

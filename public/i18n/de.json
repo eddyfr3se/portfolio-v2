@@ -28,8 +28,8 @@
   "projects": {
     "title": "Meine Arbeit",
     "join": "Aufgabenmanager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben, weise Kontakte zu und verschiebe Aufgaben per Drag & Drop zwischen den Bearbeitungsständen.",
-    "polloLoco": "Jump-, Run- und Wurfspiel auf Basis objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-    "pokedex": "Auf Basis der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    "polloLoco": "Jump-and-Run-Spiel auf Basis objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu sammeln und besiege anschließend die verrückte Henne.",
+    "pokedex": "Eine kompakte Pokédex-Anwendung auf Basis der PokéAPI, die Informationen zu Pokémon übersichtlich darstellt."
   },
   "references": {
     "title": "Brauchst du einen Teamplayer?",
@@ -42,10 +42,10 @@
     "t3Quote": "„Ein drittes echtes Zitat. Wenn du keine hast, lassen wir diese Sektion weg.“"
   },
   "contact": {
-    "heading": "Hast du ein Problem zu lösen?",
-    "text": "Ermutige Leute, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeig, dass du mit deiner Arbeit einen Mehrwert für ihre Projekte schaffst.",
-    "cta": "Du brauchst einen Frontend-Entwickler? ",
-    "ctaStrong": "Schreib mir!",
+    "heading": "Du hast ein Projekt im Kopf?",
+    "text": "Ich suche eine Position als Frontend-Entwickler und freue mich auf Projekte, bei denen klare Gestaltung, saubere Umsetzung und verlässliche Zusammenarbeit zählen. Schreib mir – ich freue mich darauf, deine Idee kennenzulernen.",
+    "cta": "Du suchst einen Frontend-Entwickler? ",
+    "ctaStrong": "Lass uns sprechen!",
     "name": "Dein Name",
     "email": "Deine E-Mail",
     "message": "Deine Nachricht",
